@@ -31,13 +31,13 @@ export function Header() {
           <div>
             <h1>Logo</h1>
           </div>
-          {width >= 720 ? (
+          {width <= 720 ? (
+            <Mobile />
+          ) : (
             <Desktop
               activePage={activePage}
               setActivePage={setActivePage}
             />
-          ) : (
-            <Mobile />
           )}
         </div>
       </div>
