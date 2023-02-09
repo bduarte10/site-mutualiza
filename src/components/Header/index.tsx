@@ -6,7 +6,7 @@ import { Mobile } from './Mobile'
 
 export function Header({}) {
   const [activePage, setActivePage] = useState<string>('home')
-  const [width, setWidth] = useState(0)
+  const [width, setWidth] = useState(1200)
   const router = useRouter()
 
   useEffect(() => {
@@ -43,15 +43,4 @@ export function Header({}) {
       </div>
     </header>
   )
-}
-export async function getServerSideProps() {
-  const width = typeof window !== 'undefined' ? window.innerWidth : 1200
-  const activePage = 'home'
-
-  return {
-    props: {
-      activePage,
-      width,
-    },
-  }
 }
