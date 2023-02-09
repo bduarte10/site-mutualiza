@@ -15,8 +15,15 @@ export function Header() {
     // seta a página ativa de acordo com a rota
     if (router.pathname === '/') {
       setActivePage('home')
-    } else setActivePage(router.pathname.split('/')[1])
+    } else {
+      setActivePage(router.pathname.split('/')[1])
+      if (router.pathname.split('/')[1] === 'servicos') {
+        setActivePage('serviços')
+      }
+      console.log(activePage)
+    }
   }, [])
+
   return (
     <header className={styles.header}>
       <div className="container">
