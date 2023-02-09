@@ -1,3 +1,12 @@
+:root {
+  --primary: #869d7a;
+  --secondary: #3f4620;
+  --tertiary: #021c3b;
+
+  --white: #f5f5f5;
+  --gray: #8a897c;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,4 +14,13 @@
 }
 a {
   text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+button {
+  cursor: pointer;
 }
