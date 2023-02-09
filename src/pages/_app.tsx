@@ -3,7 +3,10 @@ import { Inter } from '@next/font/google'
 import type { AppProps } from 'next/app'
 import Layout from '@/Layout'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  weight: ['400', '500', '600'],
+  subsets: ['latin'],
+})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

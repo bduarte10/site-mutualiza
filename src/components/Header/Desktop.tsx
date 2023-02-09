@@ -35,6 +35,7 @@ export function Desktop({ activePage, setActivePage }: DesktopProps) {
           {item.label}
         </Link>
       ))}
+      <button className={styles.button}>CONTE-NOS A SUA NECESSIDADE</button>
     </nav>
   )
 }
