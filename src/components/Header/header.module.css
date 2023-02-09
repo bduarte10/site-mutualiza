@@ -44,14 +44,15 @@
   background-color: var(--primary);
   color: var(--white);
   padding: 0.8rem 1rem;
-  border: none;
+  border: 2px solid var(--primary);
   border-radius: 5px;
   font-weight: 500;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 .button:hover {
-  background-color: var(--secondary);
+  filter: brightness(1.1);
+  color: #fff;
 }
 .close {
   position: absolute;
