@@ -1,17 +1,22 @@
+import { GetServerSideProps } from 'next'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { Desktop } from './Desktop'
 import styles from './header.module.css'
 import { Mobile } from './Mobile'
 
-export function Header({}) {
+interface HeaderProps {
+  width: number
+}
+
+export function Header({ width }: HeaderProps) {
   const [activePage, setActivePage] = useState<string>('home')
-  const [width, setWidth] = useState(1200)
+  const [windowWidth, setWindowWidth] = useState(width)
   const router = useRouter()
 
   useEffect(() => {
-    setWidth(window.innerWidth)
-    window.addEventListener('resize', () => setWidth(window.innerWidth))
+    setWindowWidth(window.innerWidth)
+    window.addEventListener('resize', () => setWindowWidth(window.innerWidth))
     // seta a página ativa de acordo com a rota
     if (router.pathname === '/') {
       setActivePage('home')
@@ -31,7 +36,7 @@ export function Header({}) {
           <div>
             <h1>Logo</h1>
           </div>
-          {width >= 720 ? (
+          {windowWidth >= 720 ? (
             <Desktop
               activePage={activePage}
               setActivePage={setActivePage}
@@ -43,4 +48,18 @@ export function Header({}) {
       </div>
     </header>
   )
+}
+export const getServerSideProps: GetServerSideProps = async () => {
+  let width = 720
+  try {
+    width = window.innerWidth
+  } catch (error) {
+    width = 720
+  }
+
+  return {
+    props: {
+      width,
+    },
+  }
 }
