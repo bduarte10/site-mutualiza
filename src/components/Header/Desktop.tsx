@@ -6,7 +6,7 @@ interface DesktopProps {
   activePage: string
   setActivePage: (page: string) => void
 }
-interface NavItem {
+export interface NavItem {
   label: string
   href: string
 }
