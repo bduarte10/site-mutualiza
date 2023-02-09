@@ -4,7 +4,7 @@ import { Desktop } from './Desktop'
 import styles from './header.module.css'
 import { Mobile } from './Mobile'
 
-export function Header() {
+export function Header({}) {
   const [activePage, setActivePage] = useState<string>('home')
   const [width, setWidth] = useState(0)
   const router = useRouter()
@@ -31,16 +31,27 @@ export function Header() {
           <div>
             <h1>Logo</h1>
           </div>
-          {width <= 720 ? (
-            <Mobile />
-          ) : (
+          {width >= 720 ? (
             <Desktop
               activePage={activePage}
               setActivePage={setActivePage}
             />
+          ) : (
+            <Mobile />
           )}
         </div>
       </div>
     </header>
   )
+}
+export async function getServerSideProps() {
+  const width = typeof window !== 'undefined' ? window.innerWidth : 1200
+  const activePage = 'home'
+
+  return {
+    props: {
+      activePage,
+      width,
+    },
+  }
 }
