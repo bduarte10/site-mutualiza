@@ -1,7 +1,7 @@
 :root {
-  --green: #869d7a;
-  --olive: #3f4620;
-  --darkBlue: #021c3b;
+  --primary: #869d7a;
+  --secondary: #3f4620;
+  --tertiary: #021c3b;
 
   --white: #f5f5f5;
   --gray: #8a897c;

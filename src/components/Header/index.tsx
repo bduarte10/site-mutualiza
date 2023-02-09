@@ -9,7 +9,7 @@ export function Header() {
       <div className="container">
         <div className={styles.navbar}>
           <div>
-            <h1>LOGO</h1>
+            <h1>Logo</h1>
           </div>
           <Desktop
             activePage={activePage}
