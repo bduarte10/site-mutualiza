@@ -1,3 +1,22 @@
-.title {
-  color: red;
+.header {
+  background-color: var(--white);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+.list a {
+  text-decoration: none;
+  color: var(--green);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+.list a:hover {
+  color: var(--olive);
+}
+.active {
+  color: var(--olive) !important;
 }
