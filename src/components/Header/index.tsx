@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { Desktop } from './Desktop'
 import styles from './header.module.css'
@@ -6,10 +7,15 @@ import { Mobile } from './Mobile'
 export function Header() {
   const [activePage, setActivePage] = useState<string>('home')
   const [width, setWidth] = useState(0)
+  const router = useRouter()
 
   useEffect(() => {
     setWidth(window.innerWidth)
     window.addEventListener('resize', () => setWidth(window.innerWidth))
+    // seta a página ativa de acordo com a rota
+    if (router.pathname === '/') {
+      setActivePage('home')
+    } else setActivePage(router.pathname.split('/')[1])
   }, [])
   return (
     <header className={styles.header}>

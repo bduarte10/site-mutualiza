@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import { NavItem } from './Desktop'
-import styles from './mobile.module.css'
+import styles from './header.module.css'
 import { List, X } from 'phosphor-react'
 
 const navItems: NavItem[] = [
