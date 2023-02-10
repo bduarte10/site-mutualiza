@@ -33,6 +33,10 @@
   line-height: 2rem;
 }
 
+.content_img div img {
+  max-width: 100%;
+}
+
 .link {
   display: inline-block;
   background: transparent;
