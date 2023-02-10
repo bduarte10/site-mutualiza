@@ -24,7 +24,7 @@ export function Hero() {
           </div>
           <div className={styles.content_img}>
             <div>
-              <img src="/assets/bg-hero.jpg" width={500} height={400}
+              <img src="/assets/bg-hero.jpg" width={500} height={550}
               />
             </div>
           </div>
