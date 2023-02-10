@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import styles from './hero.module.css'
+
 
 export function Hero() {
   return (
@@ -15,15 +17,14 @@ export function Hero() {
                 solutions to businesses experiencing issues they can’t deal with
                 in-house.
               </h3>
-
-              <button>Fale conosco</button>
+              <Link className={styles.link} href="/contato">
+                Contate-nos
+              </Link>
             </div>
           </div>
           <div className={styles.content_img}>
             <div>
-              <img
-                src=""
-                alt=""
+              <img src="/assets/bg-hero.jpg" width={500} height={550}
               />
             </div>
           </div>
