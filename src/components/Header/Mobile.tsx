@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { useState } from 'react'
-import { NavItem } from './Desktop'
 import styles from './header.module.css'
 import { List, X } from 'phosphor-react'
+import { NavItem } from '.'
 
 const navItems: NavItem[] = [
   { label: 'Home', href: '/' },

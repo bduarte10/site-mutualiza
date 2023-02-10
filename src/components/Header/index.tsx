@@ -1,13 +1,23 @@
 import { GetServerSideProps } from 'next'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
-import { Desktop } from './Desktop'
 import styles from './header.module.css'
 import { Mobile } from './Mobile'
 
 interface HeaderProps {
   width: number
 }
+export interface NavItem {
+  label: string
+  href: string
+}
+const navItems: NavItem[] = [
+  { label: 'Home', href: '/' },
+  { label: 'Sobre', href: '/sobre' },
+  { label: 'Serviços', href: '/servicos' },
+  { label: 'Contato', href: '/contato' },
+]
 
 export function Header({ width }: HeaderProps) {
   const [activePage, setActivePage] = useState<string>('home')
@@ -28,6 +38,9 @@ export function Header({ width }: HeaderProps) {
       console.log(activePage)
     }
   }, [])
+  const handleClick = (page: string) => {
+    setActivePage(page)
+  }
 
   return (
     <header className={styles.header}>
@@ -36,14 +49,24 @@ export function Header({ width }: HeaderProps) {
           <div>
             <h1>Logo</h1>
           </div>
-          {windowWidth >= 720 ? (
-            <Desktop
-              activePage={activePage}
-              setActivePage={setActivePage}
-            />
-          ) : (
-            <Mobile />
-          )}
+          <nav className={styles.list}>
+            {navItems.map((item) => (
+              <Link
+                className={
+                  activePage === item.label.toLowerCase() ? styles.active : ''
+                }
+                onClick={() => handleClick(item.label.toLowerCase())}
+                key={item.label}
+                href={item.href}>
+                {item.label}
+              </Link>
+            ))}
+            <button className={styles.button}>
+              CONTE-NOS A SUA NECESSIDADE
+            </button>
+          </nav>
+
+          {windowWidth < 768 && <Mobile />}
         </div>
       </div>
     </header>
