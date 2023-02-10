@@ -50,11 +50,11 @@ export function Header({ width }: HeaderProps) {
   )
 }
 export const getServerSideProps: GetServerSideProps = async () => {
-  let width = 720
+  let width = 0
   try {
     width = window.innerWidth
   } catch (error) {
-    width = 720
+    width = 1200
   }
 
   return {
