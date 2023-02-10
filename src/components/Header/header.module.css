@@ -92,3 +92,8 @@
   padding: 2rem 1rem;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .list {
+    display: none;
+  }
+}
