@@ -29,7 +29,7 @@ export function Header({ width }: HeaderProps) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 100) {
         setColor(true)
-      } else if (window.scrollY < 100 && color === true) {
+      } else {
         setColor(false)
       }
     })
