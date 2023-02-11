@@ -24,3 +24,8 @@ a {
 button {
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}

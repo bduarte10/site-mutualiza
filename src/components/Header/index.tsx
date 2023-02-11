@@ -47,7 +47,7 @@ export function Header({ width }: HeaderProps) {
       <div className="container">
         <div className={styles.navbar}>
           <div>
-            <h1>Logo</h1>
+            <h1 className={styles.logo}>Logo</h1>
           </div>
           <nav className={styles.list}>
             {navItems.map((item) => (
