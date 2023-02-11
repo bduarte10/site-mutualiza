@@ -63,6 +63,9 @@
   filter: brightness(1.1);
   color: #fff;
 }
+.open {
+  color: var(--white);
+}
 .close {
   position: absolute;
   top: 2rem;
