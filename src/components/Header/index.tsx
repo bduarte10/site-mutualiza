@@ -47,7 +47,7 @@ export function Header({ width }: HeaderProps) {
       <div className="container">
         <div className={styles.navbar}>
           <div>
-            <h1>Logo</h1>
+            <h1 className={styles.logo}>Logo</h1>
           </div>
           <nav className={styles.list}>
             {navItems.map((item) => (
@@ -73,7 +73,7 @@ export function Header({ width }: HeaderProps) {
   )
 }
 export const getServerSideProps: GetServerSideProps = async () => {
-  let width = 0
+  let width = 1200
   try {
     width = window.innerWidth
   } catch (error) {

@@ -21,6 +21,7 @@ export function Mobile() {
     <>
       {!isOpen ? (
         <List
+          className={styles.open}
           size={32}
           onClick={handleClick}
         />
