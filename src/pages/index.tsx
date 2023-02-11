@@ -5,12 +5,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Hero />
-      <Hero />
-      {/* <Sobre/>
-      <Services/>
-      <Contato/> */}
+      <Services />
 
+      {/* <Sobre/>
+      <Contato/> */}
     </>
   )
 }
