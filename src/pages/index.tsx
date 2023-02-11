@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Hero />
-      <Hero />
-      <Hero />
+      {/* <Sobre/>
+      <Services/>
+      <Contato/> */}
     </>
   )
 }
