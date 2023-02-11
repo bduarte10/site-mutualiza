@@ -2,13 +2,24 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
   background-color: transparent;
+  transition: 0.3s;
+}
+.scroll {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.header.scroll .navbar {
+  height: 75px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100px;
+  height: 100px;
+  transition: 0.3s;
 }
 .logo {
   font-size: 2rem;
