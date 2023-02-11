@@ -22,7 +22,18 @@ const navItems: NavItem[] = [
 export function Header({ width }: HeaderProps) {
   const [activePage, setActivePage] = useState<string>('home')
   const [windowWidth, setWindowWidth] = useState(width)
+  const [color, setColor] = useState(false)
   const router = useRouter()
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setColor(true)
+      } else if (window.scrollY < 100 && color === true) {
+        setColor(false)
+      }
+    })
+  }, [])
 
   useEffect(() => {
     setWindowWidth(window.innerWidth)
@@ -43,7 +54,7 @@ export function Header({ width }: HeaderProps) {
   }
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${color ? styles.scroll : ''}`}>
       <div className="container">
         <div className={styles.navbar}>
           <div>
