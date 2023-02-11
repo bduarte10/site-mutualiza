@@ -4,6 +4,9 @@
   width: 100%;
   background-color: transparent;
 }
+.scroll {
+  background-color: var(--white);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
