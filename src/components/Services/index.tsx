@@ -10,9 +10,9 @@ export function Services() {
         <section className={styles.section}>
             <div className="container">
                 <div className={styles.content}>
-                <div className={styles.content_title}>
-                            <h2>Serviços</h2>
-                        </div>
+                    <div className={styles.content_title}>
+                            <h2>SERVIÇOS</h2>
+                    </div>
                     <div className={styles.content_items}>
                         <div className={styles.card}>
 
@@ -98,6 +98,9 @@ export function Services() {
                             <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
                             </div>
                         </div>
+                    </div>
+                    <div className={styles.more}>
+                    <Link href="/servicos"><p>Todos serviços</p><span></span></Link>
                     </div>
                 </div>
             </div>
