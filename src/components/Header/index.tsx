@@ -69,7 +69,6 @@ export function Header({ width }: HeaderProps) {
           </div>
           <nav className={styles.list}>
             {navItems.map((item, i) => (
-              //entre da esquerda para direita
               <motion.div
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
