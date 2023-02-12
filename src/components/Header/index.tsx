@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import styles from './header.module.css'
 import { Mobile } from './Mobile'
+import { motion } from 'framer-motion'
 
 interface HeaderProps {
   width: number
@@ -58,23 +59,42 @@ export function Header({ width }: HeaderProps) {
       <div className="container">
         <div className={styles.navbar}>
           <div>
-            <h1 className={styles.logo}>Logo</h1>
+            <motion.h1
+              //entre de cima para baixo
+
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className={styles.logo}>
+              Logo
+            </motion.h1>
           </div>
           <nav className={styles.list}>
-            {navItems.map((item) => (
-              <Link
-                className={
-                  activePage === item.label.toLowerCase() ? styles.active : ''
-                }
-                onClick={() => handleClick(item.label.toLowerCase())}
-                key={item.label}
-                href={item.href}>
-                {item.label}
-              </Link>
+            {navItems.map((item, i) => (
+              //entre da esquerda para direita
+              <motion.div
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: i * 0.1 }}
+                key={item.label}>
+                <Link
+                  className={
+                    activePage === item.label.toLowerCase() ? styles.active : ''
+                  }
+                  onClick={() => handleClick(item.label.toLowerCase())}
+                  href={item.href}>
+                  {item.label}
+                </Link>
+              </motion.div>
             ))}
-            <button className={styles.button}>
+            <motion.button
+              //entre da esquerda para direita
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              className={styles.button}>
               CONTE-NOS A SUA NECESSIDADE
-            </button>
+            </motion.button>
           </nav>
 
           {windowWidth < 768 && <Mobile />}
