@@ -1,10 +1,10 @@
+import { motion } from 'framer-motion'
 import { GetServerSideProps } from 'next'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import styles from './header.module.css'
 import { Mobile } from './Mobile'
-import { motion } from 'framer-motion'
 
 interface HeaderProps {
   width: number
@@ -60,8 +60,6 @@ export function Header({ width }: HeaderProps) {
         <div className={styles.navbar}>
           <div>
             <motion.h1
-              //entre de cima para baixo
-
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
