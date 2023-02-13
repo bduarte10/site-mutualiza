@@ -1,5 +1,6 @@
-import Link from 'next/link'
-import styles from './hero.module.css'
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./hero.module.css";
 
 export function Hero() {
   return (
@@ -16,24 +17,23 @@ export function Hero() {
                 solutions to businesses experiencing issues they can’t deal with
                 in-house.
               </h3>
-              <Link
-                className={styles.link}
-                href="/contato">
+              <Link className={styles.link} href="/contato">
                 Contate-nos
               </Link>
             </div>
           </div>
           <div className={styles.content_img}>
             <div>
-              <img
+              <Image
                 src="/assets/bg-hero.jpg"
                 width={500}
                 height={450}
+                alt="Imagem de fundo"
               />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
