@@ -47,9 +47,9 @@ export function Header({ width }: HeaderProps) {
       if (router.pathname.split('/')[1] === 'servicos') {
         setActivePage('serviços')
       }
-      console.log(activePage)
+
     }
-  }, [])
+  }, [router.pathname])
   const handleClick = (page: string) => {
     setActivePage(page)
   }
