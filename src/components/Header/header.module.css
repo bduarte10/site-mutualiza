@@ -1,17 +1,44 @@
 .header {
-  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.scroll {
+  background: rgba(6, 6, 6, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header.scroll .navbar {
+  height: 75px;
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 100px;
+  height: 100px;
+  transition: 0.3s;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 .list a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: var(--primary);
+  color: #eee;
   font-size: 1.1rem;
   font-weight: 400;
   margin-right: 2rem;
@@ -25,7 +52,7 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--primary);
+  background-color: var(--white);
   transition: 0.5s;
 }
 .list a.active::after {
@@ -35,10 +62,10 @@
   width: 100%;
 }
 .list a:hover {
-  color: var(--secondary);
+  color: var(--white);
 }
 .active {
-  color: var(--secondary) !important;
+  color: var(--white) !important;
 }
 .button {
   background-color: var(--primary);
@@ -48,11 +75,13 @@
   border-radius: 5px;
   font-weight: 500;
   cursor: pointer;
-  transition: 0.2s;
 }
 .button:hover {
   filter: brightness(1.1);
   color: #fff;
+}
+.open {
+  color: var(--white);
 }
 .close {
   position: absolute;

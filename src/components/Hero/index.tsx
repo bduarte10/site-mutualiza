@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import styles from './hero.module.css'
 
-
 export function Hero() {
   return (
     <section className={styles.hero_bg}>
@@ -17,14 +16,19 @@ export function Hero() {
                 solutions to businesses experiencing issues they can’t deal with
                 in-house.
               </h3>
-              <Link className={styles.link} href="/contato">
+              <Link
+                className={styles.link}
+                href="/contato">
                 Contate-nos
               </Link>
             </div>
           </div>
           <div className={styles.content_img}>
             <div>
-              <img src="/assets/bg-hero.jpg" width={500} height={550}
+              <img
+                src="/assets/bg-hero.jpg"
+                width={500}
+                height={450}
               />
             </div>
           </div>
