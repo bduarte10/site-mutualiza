@@ -1,0 +1,28 @@
+.buttonWhatsapp {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  text-decoration: none;
+}
+.linkWhats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
