@@ -1,3 +1,4 @@
+import { ButtonWhatsapp } from '@/components/ButtonWhatsapp'
 import { Header } from '@/components/Header'
 
 export default function Layout({ children }) {
@@ -5,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <Header />
       <main>{children}</main>
-     
+      <ButtonWhatsapp />
     </>
   )
 }
