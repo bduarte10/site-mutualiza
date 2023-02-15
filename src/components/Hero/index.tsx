@@ -20,7 +20,7 @@ export function Hero() {
               <motion.h3
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.8 }}
+                transition={{ duration: 1, delay: 0.9 }}
               >
                 We offer a professional advice, guidance and actionable
                 solutions to businesses experiencing issues they can’t deal with
@@ -29,7 +29,7 @@ export function Hero() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.0 }}
+                transition={{ duration: 1, delay: 1.2 }}
               >
                 <Link className={styles.link} href="/contato">
                   Contate-nos
