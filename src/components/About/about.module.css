@@ -1,11 +1,13 @@
 .section {
   background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .content {
   display: flex;
   justify-content: space-between;
-  padding-top: 4rem;
 }
 
 .content_item {
