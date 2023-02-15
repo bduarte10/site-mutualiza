@@ -1,108 +1,92 @@
-import { ArrowRight, EnvelopeSimpleOpen, HouseLine, Leaf, Recycle, Scroll, Truck } from 'phosphor-react'
-import styles from './services.module.css'
-import Link from 'next/link'
+import styles from "./services.module.css";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  EnvelopeSimpleOpen,
+  HouseLine,
+  Leaf,
+  Recycle,
+  Scroll,
+  Truck,
+} from "phosphor-react";
 
-
+const services = [
+  {
+    icon: <Scroll size={42} />,
+    title: "Licenciamento Ambiental",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    link: "/servicos",
+  },
+  {
+    icon: <Recycle size={42} />,
+    title: "Plano de Gerenciamento de Resíduos Sólidos",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    link: "/servicos",
+  },
+  {
+    icon: <Leaf size={42} />,
+    title: "Cadastro Técnico Federal (IBAMA)",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    link: "/servicos",
+  },
+  {
+    icon: <Truck size={42} />,
+    title: "Gerenciamento de Manifesto de Transporte de Resíduos (MTR)",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    link: "/servicos",
+  },
+  {
+    icon: <HouseLine size={42} />,
+    title: "Certidão de Esgotamento Sanitário (Sabesp)",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    link: "/servicos",
+  },
+  {
+    icon: <EnvelopeSimpleOpen size={42} />,
+    title:
+      "Diretrizes para abastecimento de água e/ou coleta de Esgotos (Sabesp)",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    link: "/servicos",
+  },
+];
 
 export function Services() {
-    return (
-
-        <section className={styles.section}>
-            <div className="container">
-                <div className={styles.content}>
-                <div className={styles.content_title}>
-                            <h2>Serviços</h2>
-                        </div>
-                    <div className={styles.content_items}>
-                        <div className={styles.card}>
-
-
-                            <div className={styles.icon}>
-                            <span> <Scroll size={42} /></span>                                
-                            </div>
-                            <div className={styles.text}>
-                                <h2>Licenciamento Ambiental</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div className={styles.link}>
-                            <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.card}>
-                            <div className={styles.icon}>
-                                <span><Recycle size={42} /></span>
-                            </div>
-                            <div className={styles.text}>
-                                <h2>Plano de Gerenciamento de Resíduos Sólidos</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div className={styles.link}>
-                            <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.card}>
-                            <div className={styles.icon}>
-                                <span><Leaf size={42} /></span>
-                            </div>
-                            <div className={styles.text}>
-                                <h2>Cadastro Técnico Federal </h2>
-                                <p>Lorem ipsum (IBAMA) sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div className={styles.link}>
-                            <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.card}>
-                            <div className={styles.icon}>
-                                <span><Truck size={42} /></span>
-                            </div>
-                            <div className={styles.text}>
-                                <h2>Gerenciamento de Manifesto de Transporte de Resíduos </h2>
-                                <p>Lorem ipsum (MTR) sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div className={styles.link}>
-                            <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.card}>
-                            <div className={styles.icon}>
-                                <span><HouseLine size={42} /></span>
-                            </div>
-                            <div className={styles.text}>
-                                <h2>Certidão de Esgotamento Sanitário</h2>
-                                <p>Lorem ipsum  (Sabesp) sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div className={styles.link}>
-                            <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
-                            </div>
-                        </div>
-
-
-                        <div className={styles.card}>
-                            <div className={styles.icon}>
-                                <span><EnvelopeSimpleOpen size={42} /></span>
-                            </div>
-                            <div className={styles.text}>
-                                <h2>Diretrizes para abastecimento de água e/ou coleta de Esgotos </h2>
-                                <p>Lorem ipsum (Sabesp) sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div className={styles.link}>
-                            <Link href="/servicos"><span><ArrowRight size={32} /></span></Link>
-                            </div>
-                        </div>
+  return (
+    <section className={styles.section}>
+      <div className="container">
+        <div className={styles.content}>
+          <div className={styles.content_title}>
+            <h2>Serviços</h2>
+          </div>
+          <div className={styles.content_items}>
+            {services.map((service, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
+                key={index}
+              >
+                <Link href={service.link}>
+                  <div className={styles.card}>
+                    <div className={styles.icon}>
+                      <span>{service.icon}</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-    )
+                    <div className={styles.text}>
+                      <h2>{service.title}</h2>
+                      <p>{service.text}</p>
+                    </div>
+                    <div className={styles.link}>
+                      <span className={styles.spanLink}>Saiba mais</span>
+                      <ArrowRight color="var(--primary)" size={32} />
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-
