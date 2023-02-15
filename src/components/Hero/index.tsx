@@ -11,25 +11,25 @@ export function Hero() {
           <div className={styles.content_items}>
             <div>
               <motion.h1
-                initial={{ opacity: 0, x: -100 }}
+                initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.5 }}
               >
                 Resolvemos suas demandas ambientais com resultados efetivos.
               </motion.h1>
               <motion.h3
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 0.8 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 0.9 }}
               >
                 We offer a professional advice, guidance and actionable
                 solutions to businesses experiencing issues they can’t deal with
                 in-house.
               </motion.h3>
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, delay: 1.0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1.2 }}
               >
                 <Link className={styles.link} href="/contato">
                   Contate-nos
@@ -39,8 +39,8 @@ export function Hero() {
           </div>
           <div className={styles.content_img}>
             <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
             >
               <Image
