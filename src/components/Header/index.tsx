@@ -67,41 +67,37 @@ export function Header({ width }: HeaderProps) {
               Logo
             </motion.h1>
           </div>
-          {windowWidth > 768 ? (
-            <nav className={styles.list}>
-              {navItems.map((item, i) => (
-                <motion.div
-                  initial={{ x: -100, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 1, delay: i * 0.1 }}
-                  key={item.label}
-                >
-                  <Link
-                    className={
-                      activePage === item.label.toLowerCase()
-                        ? styles.active
-                        : ""
-                    }
-                    onClick={() => handleClick(item.label.toLowerCase())}
-                    href={item.href}
-                  >
-                    {item.label}
-                  </Link>
-                </motion.div>
-              ))}
-              <motion.button
-                //entre da esquerda para direita
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
-                className={styles.button}
+
+          <nav className={styles.list}>
+            {navItems.map((item, i) => (
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: i * 0.1 }}
+                key={item.label}
               >
-                CONTE-NOS A SUA NECESSIDADE
-              </motion.button>
-            </nav>
-          ) : (
-            <Mobile />
-          )}
+                <Link
+                  className={
+                    activePage === item.label.toLowerCase() ? styles.active : ""
+                  }
+                  onClick={() => handleClick(item.label.toLowerCase())}
+                  href={item.href}
+                >
+                  {item.label}
+                </Link>
+              </motion.div>
+            ))}
+            <motion.button
+              //entre da esquerda para direita
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 1.5 }}
+              className={styles.button}
+            >
+              CONTE-NOS A SUA NECESSIDADE
+            </motion.button>
+          </nav>
+          {windowWidth < 768 && <Mobile />}
         </div>
       </div>
     </header>
