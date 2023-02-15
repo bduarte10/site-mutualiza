@@ -72,9 +72,8 @@
 @media (max-width: 830px) {
   .hero_bg {
     display: block;
-    height: 100vh;
+    height: 100%;
     padding-top: 5rem;
-
   }
   .content {
     height: auto;
