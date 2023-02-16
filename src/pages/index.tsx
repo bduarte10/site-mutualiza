@@ -1,3 +1,4 @@
+import { CallToAction } from "@/components/CallToAction";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 
@@ -6,8 +7,8 @@ export default function Home() {
     <>
       <Hero />
       <Services />
-      {/* <Sobre/>
-      <Contato/> */}
+      <CallToAction/>
+      
     </>
   );
 }
