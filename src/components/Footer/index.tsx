@@ -1,9 +1,10 @@
 import { navItems } from "@/constants";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import styles from "./styles.module.css";
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div>
         <div>
           <h1>logo</h1>
