@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "./header.module.css";
 import { List, X } from "phosphor-react";
 import { NavItem } from ".";
+import { motion } from "framer-motion";
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
@@ -25,10 +26,17 @@ export function Mobile() {
         <div className={styles.mobileMenu} onClick={handleClick}>
           <X className={styles.close} size={32} onClick={handleClick} />
           <div className={styles.mobileNav}>
-            {navItems.map((item) => (
-              <Link key={item.label} href={item.href} onClick={handleClick}>
-                {item.label}
-              </Link>
+            {navItems.map((item, i) => (
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.2 }}
+                key={item.label}
+              >
+                <Link key={item.label} href={item.href} onClick={handleClick}>
+                  {item.label}
+                </Link>
+              </motion.div>
             ))}
           </div>
         </div>
