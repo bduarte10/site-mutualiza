@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import { Mobile } from "./Mobile";
+import { navItems } from "@/constants";
 
 interface HeaderProps {
   width: number;
@@ -13,12 +14,6 @@ export interface NavItem {
   label: string;
   href: string;
 }
-const navItems: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "Sobre", href: "/sobre" },
-  { label: "Serviços", href: "/servicos" },
-  { label: "Contato", href: "/contato" },
-];
 
 export function Header({ width }: HeaderProps) {
   const [activePage, setActivePage] = useState<string>("home");
