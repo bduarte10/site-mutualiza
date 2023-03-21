@@ -6,7 +6,9 @@ export function About() {
   return (
     <section className={styles.section}>
       <div className='container'>
-        <h1>Sobre</h1>
+        <div className={styles.content_title}>
+          <h2>Sobre</h2>
+        </div>
         <div className={styles.content}>
           <div className={styles.content_item}>
             <h2>We are Seven Company</h2>
