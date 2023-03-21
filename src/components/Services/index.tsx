@@ -1,6 +1,6 @@
-import styles from "./services.module.css";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import styles from './services.module.css';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import {
   ArrowRight,
   EnvelopeSimpleOpen,
@@ -9,52 +9,52 @@ import {
   Recycle,
   Scroll,
   Truck,
-} from "phosphor-react";
+} from 'phosphor-react';
 
 const services = [
   {
     icon: <Scroll size={42} />,
-    title: "Licenciamento Ambiental",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "/servicos",
+    title: 'Licenciamento Ambiental',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    link: '/servicos',
   },
   {
     icon: <Recycle size={42} />,
-    title: "Plano de Gerenciamento de Resíduos Sólidos",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "/servicos",
+    title: 'Plano de Gerenciamento de Resíduos Sólidos',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    link: '/servicos',
   },
   {
     icon: <Leaf size={42} />,
-    title: "Cadastro Técnico Federal (IBAMA)",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "/servicos",
+    title: 'Cadastro Técnico Federal (IBAMA)',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    link: '/servicos',
   },
   {
     icon: <Truck size={42} />,
-    title: "Gerenciamento de Manifesto de Transporte de Resíduos (MTR)",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "/servicos",
+    title: 'Gerenciamento de Manifesto de Transporte de Resíduos (MTR)',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    link: '/servicos',
   },
   {
     icon: <HouseLine size={42} />,
-    title: "Certidão de Esgotamento Sanitário (Sabesp)",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "/servicos",
+    title: 'Certidão de Esgotamento Sanitário (Sabesp)',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    link: '/servicos',
   },
   {
     icon: <EnvelopeSimpleOpen size={42} />,
     title:
-      "Diretrizes para abastecimento de água e/ou coleta de Esgotos (Sabesp)",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    link: "/servicos",
+      'Diretrizes para abastecimento de água e/ou coleta de Esgotos (Sabesp)',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+    link: '/servicos',
   },
 ];
 
 export function Services() {
   return (
     <section className={styles.section}>
-      <div className="container">
+      <div className='container'>
         <div className={styles.content}>
           <div className={styles.content_title}>
             <h2>Serviços</h2>
@@ -78,7 +78,7 @@ export function Services() {
                     </div>
                     <div className={styles.link}>
                       <span className={styles.spanLink}>Saiba mais</span>
-                      <ArrowRight color="var(--primary)" size={32} />
+                      <ArrowRight color='var(--primary)' size={32} />
                     </div>
                   </div>
                 </Link>
