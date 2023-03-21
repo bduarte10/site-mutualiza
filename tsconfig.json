@@ -33,7 +33,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/Accordion/index.jsx"
+    "src/components/Accordion/index.tsx"
   ],
   "exclude": [
     "node_modules"

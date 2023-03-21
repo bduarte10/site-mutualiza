@@ -1,7 +1,9 @@
 import styles from "../styles/sobre.module.css";
 import Image from "next/image";
 import { Briefcase, Buildings, Gauge, ShieldCheck } from "phosphor-react";
-import AccordionDemo from "@/components/Accordion";
+import { AccordionComponent } from "../components/Accordion"
+
+
 
 export default function Sobre() {
   return (
@@ -11,26 +13,24 @@ export default function Sobre() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div className="container">
-        <section className={styles.content_items}>
+        <section className={styles.content_items_higher}>
 
           <div className={styles.content_img}>
             <Image
               src="/assets/img-sobre.jpg"
               width={550}
-              height={550}
+              height={500}
               alt=""
             />
           </div>
 
           <div className={styles.content_accordion}>
-
-            < AccordionDemo />
-
+            <AccordionComponent />
           </div>
 
         </section>
 
-        <section className={styles.content_items}>
+        <section className={styles.content_items_bottom}>
 
           <div className={styles.content_cards}>
             <div className={styles.cards}>
@@ -67,8 +67,8 @@ export default function Sobre() {
           <div className={styles.content_img}>
             <Image
               src="/assets/img-office.jpg"
-              width={800}
-              height={800}
+              width={500}
+              height={500}
               alt=""
             />
 

@@ -15,9 +15,10 @@
     
 }
 
+
 .AccordionContent {
   overflow: hidden;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var( --gray);
  
 }
@@ -40,8 +41,6 @@
     background-color: var(--quaternary);
     transition: 0.3s;  
 }
-
-
 
 
 
