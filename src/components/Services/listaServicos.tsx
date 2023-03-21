@@ -4,6 +4,12 @@ interface Service {
   text: string;
   link: string;
 }
+
+type Servico = {
+  titulo: string;
+  descricao: string;
+  imagem: string;
+};
 import {
   EnvelopeSimpleOpen,
   HouseLine,
@@ -18,19 +24,19 @@ export const services: Service[] = [
     icon: <Scroll size={42} />,
     title: 'Licenciamento Ambiental',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: '/servicos',
+    link: '/servicos/licenciamento-ambiental',
   },
   {
     icon: <Recycle size={42} />,
     title: 'Plano de Gerenciamento de Resíduos Sólidos',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: '/servicos',
+    link: '/servicos/residuos-solidos',
   },
   {
     icon: <Leaf size={42} />,
     title: 'Cadastro Técnico Federal (IBAMA)',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    link: '/servicos',
+    link: '/servicos/cadastro-tecnico-federal',
   },
   {
     icon: <Truck size={42} />,
@@ -52,3 +58,22 @@ export const services: Service[] = [
     link: '/servicos',
   },
 ];
+
+export const conteudo: Record<string, Servico> = {
+  'licenciamento-ambiental': {
+    titulo: 'Licenciamento',
+    descricao: 'Descrição do Serviço 1',
+    imagem: '/assets/bg-hero.jpg',
+  },
+
+  'residuos-solidos': {
+    titulo: 'residuos',
+    descricao: 'Descrição do Serviço 2',
+    imagem: '/servico2.png',
+  },
+  'cadastro-tecnico-federal': {
+    titulo: 'sfdasdfasdfdasf',
+    descricao: 'Desasdfasdfasdfadf',
+    imagem: '/servico2.png',
+  },
+};
