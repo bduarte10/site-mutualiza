@@ -1,8 +1,13 @@
+import styles from "../styles/contato.module.css";
+
 export default function Contato() {
   return (
-    <div>
-      <h1>Contato</h1>
-      <p>Essa é a página Contato</p>
-    </div>
+    <main>
+      <div className={styles.content_title}>
+        <h2>Contato</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+    </main>
   )
 }
