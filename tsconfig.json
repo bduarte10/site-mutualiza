@@ -32,7 +32,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "src/components/Accordion/index.tsx"
   ],
   "exclude": [
     "node_modules"
