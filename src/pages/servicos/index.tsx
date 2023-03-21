@@ -1,5 +1,5 @@
 import styles from './servicos.module.css';
-import { services } from '@/components/constants';
+import { services } from '@/components/Services/listaServicos';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'phosphor-react';

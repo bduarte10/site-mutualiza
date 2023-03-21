@@ -1,7 +1,7 @@
 import styles from './services.module.css';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { services } from '../constants';
+import { services } from './listaServicos';
 import { ArrowRight } from 'phosphor-react';
 
 export function Services() {
