@@ -9,11 +9,9 @@ export function Footer() {
       <div className="container">
         <div className={styles.content}>
           <div className={styles.logo}>
-            <h1>logo</h1>
+            <img src="./assets/mutualiza-logo-branca.png" width={150} height={100} alt="Logo" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus necessitatibus eum aspernatur aliquam vitae harum
-              mollitia corporis.
             </p>
           </div>
           <div>

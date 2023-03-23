@@ -59,8 +59,9 @@ export function Header({ width }: HeaderProps) {
               transition={{ duration: 1 }}
               className={styles.logo}
             >
-              Logo
+              <img src="./assets/mutualiza-logo-horizontal-branca.png" width={280} height={50} alt="Logo" />
             </motion.h1>
+
           </div>
 
           <nav className={styles.list}>
