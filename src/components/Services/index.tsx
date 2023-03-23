@@ -10,7 +10,8 @@ export function Services() {
       <div className='container'>
         <div className={styles.content}>
           <div className={styles.content_title}>
-            <h2>Serviços</h2>
+            <h2>Nossos serviços</h2>
+            <p>Abordagem moderna e resultados sustentáveis</p>
           </div>
           <div className={styles.content_items}>
             {services.map((service, index) => (

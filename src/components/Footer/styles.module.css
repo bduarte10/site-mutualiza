@@ -1,7 +1,6 @@
 .footer {
   margin-top: auto;
   width: 100%;
-
   padding: 60px 0;
   color: white;
   background-color: var(--primary);
@@ -15,10 +14,12 @@
 }
 
 .content h2 {
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 .logo {
   width: 300px;
+  text-align: center;
 }
 
 .link {
@@ -54,6 +55,16 @@
 .contato p {
   padding: 5px 0;
 }
+
+.contato a {
+  color: var(--white);
+  transition: .3s;
+}
+
+.contato a:hover {
+  color: var(--tertiary);
+}
+
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
