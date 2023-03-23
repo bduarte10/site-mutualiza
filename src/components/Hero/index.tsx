@@ -44,9 +44,9 @@ export function Hero() {
               transition={{ duration: 1, delay: 1.2 }}
             >
               <Image
-                src="/assets/bg-hero.jpg"
-                width={500}
-                height={450}
+                src="/assets/isotipo-branco.png"
+                width={400}
+                height={400}
                 alt="hero background"
               />
             </motion.div>

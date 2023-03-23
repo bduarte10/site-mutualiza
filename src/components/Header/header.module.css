@@ -5,6 +5,8 @@
   z-index: 999;
   background-color: transparent;
 }
+
+
 .scroll {
   background: rgba(6, 6, 6, 0.25);
   backdrop-filter: blur(10px);
@@ -17,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 150px;
   transition: 0.3s;
 }
 
@@ -26,7 +28,9 @@
   font-weight: 500;
   color: var(--white);
   text-decoration: none;
+  
 }
+
 .list {
   display: flex;
   align-items: center;
