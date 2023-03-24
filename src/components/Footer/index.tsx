@@ -3,13 +3,18 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FacebookLogo, InstagramLogo, LinkedinLogo } from "phosphor-react";
 import styles from "./styles.module.css";
+import Image from "next/image";
+import logoFooter from "/public/assets/mutualiza-logo-branca.png"
+
+
+
 export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.logo}>
-            <img src="./assets/mutualiza-logo-branca.png" width={150} height={100} alt="Logo" />
+            <Image src={logoFooter} width={150} height={100} alt="Logo" />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>

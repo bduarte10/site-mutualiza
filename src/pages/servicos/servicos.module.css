@@ -16,11 +16,19 @@
 .content_title h2 {
   color: var(--white);
   font-size: 2rem;
+  padding: 0 2rem;
+}
+
+.content_title h1 {
+  color: var(--white);
+  font-size: 2rem;
+  padding: 0 2rem;
 }
 
 .content_title p {
   font-size: 1rem;
   color: var(--white);
+  padding: 0 2rem;
 }
 .content_items {
   display: grid;
@@ -34,12 +42,9 @@
 }
 .content h2 {
   text-align: center;
-}
-
-.content_title {
-  padding: 4rem;
   font-size: 1.2rem;
 }
+
 
 .content_items {
   display: grid;
