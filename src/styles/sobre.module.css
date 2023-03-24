@@ -16,11 +16,13 @@
 .content_title h2 {
   color: var(--white);
   font-size: 2rem;
+  padding: 0 2rem;
 }
 
 .content_title p {
   font-size: 1rem;
   color: var(--white);
+  padding: 0 2rem;
 }
 
 .content_items_higher,
@@ -29,8 +31,10 @@
   gap: 4rem;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+  margin-top: 8rem;
 }
+
 
 .content_accordion {
   display: flex;
@@ -46,11 +50,12 @@
 .content_img {
   display: flex;
   flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .content_img img {
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .content_cards {
@@ -58,6 +63,7 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .cards {
@@ -70,9 +76,12 @@
 
 .cards span {
   background-color: var(--tertiary);
-  border-radius: 50%;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
   color: var(--white);
+  border-radius: 50px;
 }
 
 .cards h2 {
@@ -94,7 +103,7 @@
   .content_items_higher {
     flex-direction: column;
     gap: 1rem;
-    margin-top: 0;
+    margin-top: 4rem;
   }
 
   .content_items_bottom {

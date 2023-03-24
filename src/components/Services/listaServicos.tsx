@@ -8,7 +8,7 @@ interface Service {
 type Servico = {
   titulo: string;
   descricao: string;
-  imagem: string;
+
 };
 import {
   EnvelopeSimpleOpen,
@@ -61,19 +61,25 @@ export const services: Service[] = [
 
 export const conteudo: Record<string, Servico> = {
   'licenciamento-ambiental': {
-    titulo: 'Licenciamento',
-    descricao: 'Descrição do Serviço 1',
-    imagem: '/assets/bg-hero.jpg',
+    titulo: 'Licenciamento Ambiental',
+    descricao: `O Licenciamento Ambiental é um processo administrativo obrigatório para os empreendimentos cujas as atividades são potencialmente poluidoras ou degradadoras do meio ambiente; para os empreendimentos que utilizam recursos naturais, e empreendimentos que efetivamente são poluidores.
+
+    O processo de Licenciamento é realizado pelo órgão ambiental, que analisa os estudos e documentos ambientais requisitados para o empreendedor. Existem três tipos de licença ambiental: Licença Prévia (LP); Licença de Instalação (LI); e a Licença de Operação (LO), sendo estabelecido pelo órgão ambiental o prazo de validade da licença.
+    
+    A Mutualiza oferece serviços para todos os tipos de Licença Ambiental, buscando agilizar o processo de licenciamento, garantindo a rapidez e a eficiência na emissão das licenças necessárias para o início e para a manutenção das operações de nossos clientes.
+    
+    Invista no bom relacionamento com o meio ambiente e no cumprimento da legislação! Conte conosco para o Licenciamento Ambiental de seu empreendimento, ou para a Renovação de Licença Ambiental.`
+
   },
 
   'residuos-solidos': {
     titulo: 'residuos',
     descricao: 'Descrição do Serviço 2',
-    imagem: '/servico2.png',
+
   },
   'cadastro-tecnico-federal': {
     titulo: 'sfdasdfasdfdasf',
     descricao: 'Desasdfasdfasdfadf',
-    imagem: '/servico2.png',
+
   },
 };

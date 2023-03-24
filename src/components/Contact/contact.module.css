@@ -1,0 +1,133 @@
+
+  .content_items {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .content_items_higher {
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    padding: 1rem auto;
+  }
+
+
+  .content_items_higher h2 {
+    color: var(--tertiary);
+  }
+
+  .content_items_higher p {
+    color: var(--gray);
+  }
+
+  .content_items_higher span {
+    font-size: 1.4rem;
+    display: block;
+    color: var(--quintuary);
+    margin: 1rem auto;
+  }
+
+  .content_items_higher a {
+    text-decoration: none;
+    color: var(--tertiary);
+    padding-right: 4px;
+  }
+
+  .content_items_higher a:hover {
+    color: var(--quaternary);
+  }
+
+  .content_items_bottom {
+    display: flex;
+    flex: 1;
+  
+  }
+
+  .content_items_bottom form {
+    height: 660px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(205 206 207 / 22%);
+    padding: 2rem;
+    border-radius: 4px;
+    
+  }
+
+  .content_items_bottom form h2 {
+    color: var(--quintuary);
+    font-size: 1.6rem;
+ 
+  }
+
+  .content_items_bottom form label {
+    color: var(--quintuary);
+ 
+  }
+
+  .content_items_bottom form input {
+    height: 2.4rem;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px;
+    border-radius: 4px;
+    outline: none;
+
+  }
+
+  .content_items_bottom form textarea {
+    height: 8rem;
+    outline: none;
+    border: 1px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+
+  .content_items_bottom form button {
+    height: 2.4rem;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px;
+    border-radius: 4px;
+    background-color: var(--tertiary);
+    color: var(--white);
+    transition: .3s;
+  }
+
+  .content_items_bottom form button:hover{
+    background-color: var(--quaternary);
+  }
+
+
+  @media (max-width: 850px) {
+
+    .content_title p {
+      padding: 0rem 1rem;
+  
+    }
+
+
+    .content_items {
+      flex-direction: column;
+      margin-top: 2rem;
+      height: 100%;
+      font-size: 80%;
+      gap: 3rem;
+    }
+
+    .content_items_higher {
+      height: 100vh;
+    }
+
+    .content_items_bottom form {
+      margin-bottom: 2rem;
+    }
+
+  }

@@ -34,7 +34,7 @@ export default function Sobre() {
 
           <div className={styles.content_cards}>
             <div className={styles.cards}>
-              <span><Briefcase size={32} /></span>
+              <span><Briefcase size={26} /></span>
               <div>
                 <h2>Capacitação</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam labore magni saepe corporis quas excepturi. </p>
@@ -42,21 +42,21 @@ export default function Sobre() {
             </div>
 
             <div className={styles.cards}>
-              <span><Gauge size={32} /></span>
+              <span><Gauge size={26} /></span>
               <div><h2>Agilidade</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sint ipsam nobis delectus</p>
               </div>
             </div>
 
             <div className={styles.cards}>
-              <span><Buildings size={32} /></span>
+              <span><Buildings size={26} /></span>
               <div> <h2>Compromisso</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos adipisci repellendus molestias omnis distinctio repudiandae </p>
               </div>
             </div>
 
             <div className={styles.cards}>
-              <span><ShieldCheck size={32} /></span>
+              <span><ShieldCheck size={26} /></span>
               <div>
                 <h2>Segurança</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nulla nobis aut facere autem officiis sed ducimus! </p>
@@ -67,7 +67,7 @@ export default function Sobre() {
           <div className={styles.content_img}>
             <Image
               src="/assets/img-office.jpg"
-              width={500}
+              width={550}
               height={500}
               alt=""
             />

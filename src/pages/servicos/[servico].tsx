@@ -1,6 +1,8 @@
-import Image from 'next/image';
+
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { conteudo } from '../../components/Services/listaServicos';
+import { Contact } from '@/components/Contact';
+import styles from './servicos.module.css'
 
 interface ServicoProps {
   servico: string;
@@ -8,16 +10,15 @@ interface ServicoProps {
 
 const ServicoPage = ({ servico }: ServicoProps) => {
   return (
-    <div>
-      <h1>{conteudo[servico].titulo}</h1>
-      <p>{conteudo[servico].descricao}</p>
-      <Image
-        src={conteudo[servico].imagem}
-        alt={conteudo[servico].titulo}
-        width={500}
-        height={450}
-      />
-    </div>
+    <main>
+      <div className={styles.content_title}>
+        <h1>{conteudo[servico].titulo}</h1>
+      </div>
+      <div className="container">
+        <p>{conteudo[servico].descricao}</p>
+      </div>
+      < Contact />
+    </main>
   );
 };
 export default ServicoPage;

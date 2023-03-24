@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 import styles from "./header.module.css";
 import { Mobile } from "./Mobile";
 import { navItems } from "@/constants";
+import Image from "next/image";
+import logo from "/public/assets/mutualiza-logo-horizontal-branca.png"
+
 
 interface HeaderProps {
   width: number;
@@ -59,7 +62,11 @@ export function Header({ width }: HeaderProps) {
               transition={{ duration: 1 }}
               className={styles.logo}
             >
-              <img src="./assets/mutualiza-logo-horizontal-branca.png" width={280} height={50} alt="Logo" />
+              <Image src={logo}
+                width={280}
+                height={50}
+                alt="Logo"
+              />
             </motion.h1>
 
           </div>
