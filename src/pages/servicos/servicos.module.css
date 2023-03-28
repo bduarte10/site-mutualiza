@@ -115,5 +115,35 @@
   background-color: var(--primary);
 }
 .content_list {
-  //css
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 6rem;
+
+
+}
+
+.content_list p {
+  color: var(--gray);
+  font-size: 1.1rem;
+  
+  
+}
+
+@media (max-width: 850px) {
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .content_list {
+    flex-direction: column-reverse;
+    height: 100vh;
+    gap: 6rem;
+   
+  }
 }

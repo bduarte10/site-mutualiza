@@ -74,7 +74,6 @@
 }
 
 .Link {
-  width: 60%;
   display: inline-block;
   background: transparent;
   border: solid 2px var(--tertiary);
@@ -124,6 +123,7 @@
   .content {
     flex-direction: column-reverse;
     gap: 4rem;
+    overflow: hidden;
   }
 
   .content_title {
