@@ -146,12 +146,14 @@ export const conteudo: Record<string, Servico> = {
           legislação! Conte conosco para o Licenciamento Ambiental de seu
           empreendimento, ou para a Renovação de Licença Ambiental.
         </p>
-        <Image
-          src='/assets/bg-hero.png'
-          width={1000}
-          height={500}
-          alt='qualquer'
-        />
+        <div>
+          <Image
+            src='/assets/bg-hero.png'
+            width={1000}
+            height={500}
+            alt='qualquer'
+          />
+        </div>
       </>
     ),
   },
