@@ -9,14 +9,17 @@ interface ServicoProps {
 
 const ServicoPage = ({ servico }: ServicoProps) => {
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles.content_title}>
         <h1>{conteudo[servico].titulo}</h1>
       </div>
+
       <div className='container'>
         <div className={styles.content_list}>{conteudo[servico].conteudo}</div>
       </div>
+
       <Contact />
+
     </main>
   );
 };

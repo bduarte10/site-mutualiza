@@ -109,6 +109,30 @@
   background-color: var(--primary);
 }
 
+
+.front img {
+  max-width: 100%;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ; 
+  object-fit: cover;
+}
+
+.back {
+  max-width: 100%;
+  border-radius: 48% 52% 44% 56% / 60% 37% 80% 44%;
+  background-color: var(--secondary);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 40px -7px;
+  object-fit: contain;
+  display: flex;
+  flex: 1;
+
+}
+
+.content_text {
+  display: flex;
+  flex: 1;
+}
+
+
 @media (max-width: 850px) {
 
   .content_title {
@@ -119,5 +143,15 @@
   .content_title p {
     text-align: center;
   }
+
+  .front img {
+    height: 100%;
+  }
+
+  .back {
+    height: 100%;
+  }
+
+ 
 
 }
