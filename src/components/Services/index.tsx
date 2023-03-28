@@ -10,8 +10,20 @@ export function Services() {
       <div className='container'>
         <div className={styles.content}>
           <div className={styles.content_title}>
-            <h2>Nossos serviços</h2>
-            <p>Abordagem moderna e resultados sustentáveis</p>
+            <motion.h2
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+            >
+              Nossos serviços
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              Abordagem moderna e resultados sustentáveis
+            </motion.p>
           </div>
           <div className={styles.content_items}>
             {services.map((service, index) => (
