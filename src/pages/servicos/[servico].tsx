@@ -2,7 +2,6 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { conteudo } from '../../components/Services/listaServicos';
 import { Contact } from '@/components/Contact';
 import styles from './servicos.module.css';
-import Image from 'next/image';
 
 interface ServicoProps {
   servico: string;
