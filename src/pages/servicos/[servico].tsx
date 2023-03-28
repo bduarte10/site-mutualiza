@@ -1,8 +1,7 @@
-
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { conteudo } from '../../components/Services/listaServicos';
 import { Contact } from '@/components/Contact';
-import styles from './servicos.module.css'
+import styles from './servicos.module.css';
 
 interface ServicoProps {
   servico: string;
@@ -10,14 +9,17 @@ interface ServicoProps {
 
 const ServicoPage = ({ servico }: ServicoProps) => {
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles.content_title}>
         <h1>{conteudo[servico].titulo}</h1>
       </div>
-      <div className="container">
-        <p>{conteudo[servico].descricao}</p>
+
+      <div className='container'>
+        <div className={styles.content_list}>{conteudo[servico].conteudo}</div>
       </div>
-      < Contact />
+
+      <Contact />
+
     </main>
   );
 };
