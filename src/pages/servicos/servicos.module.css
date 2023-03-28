@@ -45,7 +45,6 @@
   font-size: 1.2rem;
 }
 
-
 .content_items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(357px, 1fr));
@@ -114,4 +113,7 @@
 .card:hover .icon {
   color: var(--white);
   background-color: var(--primary);
+}
+.content_list {
+  //css
 }
