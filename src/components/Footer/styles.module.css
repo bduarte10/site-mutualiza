@@ -19,7 +19,7 @@
 }
 .logo {
   width: 300px;
-  text-align: center;
+  
 }
 
 .link {
@@ -69,7 +69,8 @@
   .content {
     flex-direction: column;
     padding: 0 20px;
-    gap: 20px;
+    gap: 2rem;
+    
   }
   .logo {
     width: 100%;

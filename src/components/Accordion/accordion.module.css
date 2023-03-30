@@ -5,7 +5,7 @@
 .AccordionTrigger {
   border: none;
   background: transparent;
-  font-size: 1.4rem;
+  font-size: 2rem;
   padding: 20px 0;
   display: flex;
   align-items: center;
@@ -15,13 +15,15 @@
 
 .AccordionContent {
   overflow: hidden;
-  font-size: 1rem;
   color: var(--gray);
   padding: 0 10px;
 }
-/* .item {
-  margin: 1rem 0;
-} */
+
+.AccordionContent span {
+  color: var(--quintuary);
+  font-weight: bold;
+}
+
 .ArrowCircleRight {
   background-color: var(--tertiary);
   border-radius: 50%;

@@ -1,19 +1,19 @@
 .section {
   height: 100%;
-  padding: 6rem 0;
+  padding: 5rem 0;
   display: flex;
   align-items: center;
 }
 
 .content_title {
-  height: 10rem;
+  height: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .content_title h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--tertiary);
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -24,11 +24,6 @@
   
 }
 
-.content_title p {
-  font-size: 2rem;
-  color: var(--gray);
-}
-
 .content {
   display: flex;
   flex-direction: column-reverse;
@@ -37,23 +32,35 @@
 
 .content_item {
   display: flex;
-  justify-content: space-between;
+  gap: 4rem;
   
 }
 
+
 .content_item_img {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  height: 480px;
+  display: flex;
+  flex: 1;
+ 
+}
+
+.content_item_img_back {
+  max-width: 100%;
+  border-radius: 48% 52% 44% 56% / 60% 37% 80% 44%;
+  background-color: var(--quintuary);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 30px 40px -7px;
+  object-fit: contain;
 
 }
 
 .content_item_img img {
   max-width: 100%;
   object-fit: cover;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ; 
 }
 
 .content_items {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
 }
@@ -89,35 +96,7 @@
   color: var(--white);
 }
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-}
 
-.content_card {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.4rem 1rem;
-  
-}
-
-.content_card div h2 {
- font-size: 1.2rem;
- color: var(--tertiary);
-}
-
-.content_card div p {
-  margin-top: 0.5rem;
-  color: var(--gray);
-}
-
-.icon {
-  color: var(--quintuary);
-
-  
-}
 
 @media (max-width: 850px) {
   .content {
@@ -128,22 +107,30 @@
 
   .content_title {
     text-align: center;
-    height: 12rem;
-  }
-
-  .cards {
-    flex-direction: column;
+    height: 8rem;
   }
 
   .content_item {
     flex-direction: column;
-    gap: 4rem;
   }
 
   .content_items {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+
+  .content_item_img_back {
+    width: 300px;
+    height: 300px;
+  }
+
+  .content_item_img img {
+    height: 100%;
+  }
+
+  .content_item_img  {
+    justify-content: center;
   }
 
  

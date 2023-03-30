@@ -6,7 +6,6 @@ export default function Contato() {
     <main>
       <div className={styles.content_title}>
         <h2>Contato</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <Contact />
 
