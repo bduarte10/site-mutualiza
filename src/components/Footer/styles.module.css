@@ -4,6 +4,8 @@
   padding: 60px 0;
   color: white;
   background-color: var(--primary);
+  overflow: hidden;
+  
 }
 .content {
   display: flex;
@@ -11,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  
 }
 .content h1 {
   margin-bottom: 10px;
@@ -20,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+ 
 }
 .contato p {
   padding: 5px 0;
@@ -41,7 +45,5 @@
     gap: 2rem;
     
   }
-  .logo {
-    width: 100%;
-  }
+  
 }

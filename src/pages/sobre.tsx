@@ -1,6 +1,8 @@
 import styles from "../styles/sobre.module.css";
 import Image from "next/image";
 import { AccordionComponent } from "../components/Accordion"
+import { motion } from 'framer-motion';
+
 
 
 
@@ -8,12 +10,22 @@ export default function Sobre() {
   return (
     <main className={styles.section}>
       <div className={styles.content_title}>
-        <h2>Sobre nós</h2>
+        <motion.h2
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+
+        >Sobre nós
+
+        </motion.h2>
       </div>
       <div className="container">
         <section className={styles.content_items_higher}>
-
-          <div className={styles.content_img}>
+          <motion.div className={styles.content_img}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+          >
             <div className={styles.content_img_front}>
               <Image
                 src="/assets/img-sobre.jpg"
@@ -22,9 +34,14 @@ export default function Sobre() {
                 alt=""
               />
             </div>
-          </div>
+          </motion.div>
 
-          <div className={styles.content_text}>
+          <motion.div className={styles.content_text}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+
+          >
 
             <h2>História</h2>
             <p>O seu negócio e o meio ambiente em uma relação mutuamente benéfica!
@@ -41,19 +58,27 @@ export default function Sobre() {
               <br />
               Entre em contato conosco e saiba mais sobre como podemos resolver a demanda ambiental do seu negócio.</p>
 
-          </div>
+          </motion.div>
 
         </section>
 
         <section className={styles.content_items_bottom}>
 
-          <div className={styles.content_accordion}>
+          <motion.div className={styles.content_accordion}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+          >
 
             <AccordionComponent />
 
-          </div>
+          </motion.div>
 
-          <div className={styles.content_img}>
+          <motion.div className={styles.content_img}
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.7, duration: 0.8 }}
+          >
             <div className={styles.content_img_front}>
               <Image
                 src="/assets/img-office.jpg"
@@ -64,10 +89,10 @@ export default function Sobre() {
 
             </div>
 
-          </div>
+          </motion.div>
 
         </section>
       </div>
-    </main>
+    </main >
   )
 }
