@@ -215,7 +215,7 @@ export const conteudo: Record<string, Servico> = {
         <div className={styles.back}>
           <div className={styles.front}>
             <Image
-              src='/assets/bg-certidaoEsgotamento.jpg'
+              src='/assets/bg-diretrizes.jpg'
               width={500}
               height={500}
               alt='qualquer'

@@ -13,8 +13,8 @@ export function ButtonWhatsapp() {
       <Image
         src="/assets/whatsapp.svg"
         alt="whatsapp button"
-        width={32}
-        height={32}
+        width={42}
+        height={42}
       />
     </motion.a>
   );
