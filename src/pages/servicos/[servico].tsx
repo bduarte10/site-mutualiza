@@ -12,13 +12,9 @@ interface ServicoProps {
 const ServicoPage = ({ servico }: ServicoProps) => {
   return (
     <main className={styles.main}>
-      <motion.div className={styles.content_title}
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
+      <div className={styles.content_title}>
         <h1>{conteudo[servico].titulo}</h1>
-      </motion.div>
+      </div>
 
       <div className='container'>
         <div className={styles.content_list}>

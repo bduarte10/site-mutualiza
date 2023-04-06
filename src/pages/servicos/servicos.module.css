@@ -1,3 +1,6 @@
+.main {
+  overflow: hidden;
+}
 .content_title {
   height: 16rem;
   background-color: #869d7a;
@@ -11,6 +14,7 @@
   text-align: center;
   padding-top: 6rem;
   gap: 1rem;
+  
 }
 
 .content_title h2 {
