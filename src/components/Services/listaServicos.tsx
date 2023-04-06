@@ -9,6 +9,7 @@ import {
   Truck,
 } from 'phosphor-react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 interface Service {
   icon: JSX.Element;
@@ -60,7 +61,11 @@ export const conteudo: Record<string, Servico> = {
     titulo: 'Licenciamento Ambiental',
     conteudo: (
       <>
-        <div className={styles.content_text}>
+        <motion.div className={styles.content_text}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <p>
             O Licenciamento Ambiental é um processo administrativo obrigatório
             para os empreendimentos cujas as atividades são potencialmente
@@ -87,8 +92,12 @@ export const conteudo: Record<string, Servico> = {
             legislação! Conte conosco para o Licenciamento Ambiental de seu
             empreendimento, ou para a Renovação de Licença Ambiental.
           </p>
-        </div>
-        <div className={styles.back}>
+        </motion.div>
+        <motion.div className={styles.back}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
           <div className={styles.front}>
             <Image
               src='/assets/bg-licenciamentoAmbiental.png'
@@ -98,7 +107,7 @@ export const conteudo: Record<string, Servico> = {
             />
             <div className={styles.blob}></div>
           </div>
-        </div>
+        </motion.div>
       </>
     ),
   },
@@ -108,7 +117,11 @@ export const conteudo: Record<string, Servico> = {
     titulo: 'Plano de Gerenciamento de Resíduos Sólidos (PGRS)',
     conteudo: (
       <>
-        <div className={styles.content_text}>
+        <motion.div className={styles.content_text}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <p>
             O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é um documento técnico previsto pela Política Nacional de Resíduos Sólidos, instituída pela Lei nº 12.305/2010, que consiste no diagnóstico e nos procedimentos relacionados aos resíduos gerados durante a operação da empresa, que vai desde a etapa inicial de segregação, até a destinação final do resíduo.
             <br />
@@ -121,8 +134,12 @@ export const conteudo: Record<string, Servico> = {
             <br />
             A Mutualiza Engenharia conta com profissionais qualificados, com amplo conhecimento da legislação ambiental e das melhores práticas de gerenciamento de resíduos sólidos, garantindo que o PGRS seja adequado às necessidades da sua empresa. Invista no bom relacionamento com o meio ambiente e no cumprimento da legislação! Conte conosco para a elaboração do PGRS da sua empresa.
           </p>
-        </div>
-        <div className={styles.back}>
+        </motion.div>
+        <motion.div className={styles.back}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
           <div className={styles.front}>
             <Image
               src='/assets/bg-residuosSolidos.jpg'
@@ -132,7 +149,7 @@ export const conteudo: Record<string, Servico> = {
             />
             <div className={styles.blob}></div>
           </div>
-        </div>
+        </motion.div>
       </>
     ),
   },
@@ -142,7 +159,12 @@ export const conteudo: Record<string, Servico> = {
     titulo: 'Cadastro Técnico Federal (IBAMA)',
     conteudo: (
       <>
-        <div className={styles.content_text}>
+        <motion.div className={styles.content_text}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+
+        >
           <p>
             O Cadastro Técnico Federal (CTF) é um registro obrigatório para pessoas físicas e jurídicas que desenvolvem atividades potencialmente poluidoras e utilizam recursos naturais. O cadastro é feito junto ao IBAMA, no qual utiliza das informações sobre as atividades desenvolvidas para promover a gestão ambiental (Lei Federal nº 6.938/81).
             <br />
@@ -155,8 +177,12 @@ export const conteudo: Record<string, Servico> = {
             <br />
             Invista no bom relacionamento com o meio ambiente e no cumprimento da legislação! Conte conosco para a sua Inscrição no Cadastro Técnico Federal e para a Elaboração do seu Relatório de Atividades Potencialmente Poluidoras (RAPP) do Ibama.
           </p>
-        </div>
-        <div className={styles.back}>
+        </motion.div>
+        <motion.div className={styles.back}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
           <div className={styles.front}>
             <Image
               src='/assets/bg-ibama.jpg'
@@ -166,7 +192,7 @@ export const conteudo: Record<string, Servico> = {
             />
             <div className={styles.blob}></div>
           </div>
-        </div>
+        </motion.div>
       </>
     ),
   },
@@ -175,15 +201,23 @@ export const conteudo: Record<string, Servico> = {
     titulo: 'Certidão de Esgotamento Sanitário (Sabesp)',
     conteudo: (
       <>
-        <div className={styles.content_text}>
+        <motion.div className={styles.content_text}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <p>
             A Certidão de Esgotamento Sanitário é um documento emitido pela Companhia de Saneamento Básico do Estado de São Paulo (SABESP), que atesta a existência ou não de rede de coleta e tratamento de esgoto no imóvel em questão. Essa certidão é importante para diversos fins, como para o atendimento a requisitos legais e obtenção de financiamento.
             <br />
             <br />
             A Mutualiza oferece um serviço ágil e eficiente na obtenção da Certidão de Esgotamento Sanitário da SABESP, garantindo a tranquilidade e segurança para o cliente em relação às exigências legais.
           </p>
-        </div>
-        <div className={styles.back}>
+        </motion.div>
+        <motion.div className={styles.back}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
           <div className={styles.front}>
             <Image
               src='/assets/bg-certidaoEsgotamento.jpg'
@@ -193,7 +227,7 @@ export const conteudo: Record<string, Servico> = {
             />
             <div className={styles.blob}></div>
           </div>
-        </div>
+        </motion.div>
       </>
     ),
   },
@@ -202,7 +236,11 @@ export const conteudo: Record<string, Servico> = {
     titulo: 'Carta de Diretrizes de Água e/ou Esgoto (Sabesp)',
     conteudo: (
       <>
-        <div className={styles.content_text}>
+        <motion.div className={styles.content_text}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <p>
             O serviço de obtenção de carta de diretrizes para abastecimento de água e/ou coleta de esgotos da Sabesp consiste em uma análise técnica e orientações para a instalação de novas ligações de água e/ou esgoto em imóveis localizados em áreas atendidas pela Sabesp.
             <br />
@@ -212,8 +250,12 @@ export const conteudo: Record<string, Servico> = {
             <br />
             A Mutualiza conta com uma equipe de profissionais altamente capacitados e experientes para realizar a análise técnica e fornecer as orientações necessárias para a instalação das novas ligações de forma eficiente e segura. Entre em contato conosco e saiba mais sobre como podemos ajudar no processo de instalação de água e esgoto em seu imóvel.
           </p>
-        </div>
-        <div className={styles.back}>
+        </motion.div>
+        <motion.div className={styles.back}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
           <div className={styles.front}>
             <Image
               src='/assets/bg-diretrizes.jpg'
@@ -223,7 +265,7 @@ export const conteudo: Record<string, Servico> = {
             />
             <div className={styles.blob}></div>
           </div>
-        </div>
+        </motion.div>
       </>
     ),
   },
@@ -232,7 +274,11 @@ export const conteudo: Record<string, Servico> = {
     titulo: 'Gerenciamento de Manifesto de Transporte de Resíduos (MTR)',
     conteudo: (
       <>
-        <div className={styles.content_text}>
+        <motion.div className={styles.content_text}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
           <p>
             O SIGOR (Sistema Estadual de Gerenciamento Online de Resíduos) - Módulo MTR é um sistema eletrônico desenvolvido pela CETESB (Companhia Ambiental do Estado de São Paulo) que possibilita o controle, o monitoramento e a rastreabilidade de todo o processo de gerenciamento de resíduos, garantindo a adequada destinação dos resíduos gerados pelas empresas.
             <br />
@@ -242,8 +288,12 @@ export const conteudo: Record<string, Servico> = {
             <br />
             A Mutualiza oferece o serviço de gerenciamento do SIGOR - Módulo MTR, garantindo a sua correta emissão e demais obrigações relacionadas ao sistema, como a DMR (Declaração de Movimentação de Resíduo), proporcionando tranquilidade e segurança aos nossos clientes no que se refere ao gerenciamento de seus resíduos.
           </p>
-        </div>
-        <div className={styles.back}>
+        </motion.div>
+        <motion.div className={styles.back}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
           <div className={styles.front}>
             <Image
               src='/assets/bg-mtr.jpg'
@@ -253,7 +303,7 @@ export const conteudo: Record<string, Servico> = {
             />
             <div className={styles.blob}></div>
           </div>
-        </div>
+        </motion.div>
       </>
     ),
   },
