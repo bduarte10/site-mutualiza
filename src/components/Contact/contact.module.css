@@ -1,11 +1,9 @@
 
   .content_items {
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 6rem 0;
     overflow: hidden;
-   
   }
 
   .content_items_higher {
