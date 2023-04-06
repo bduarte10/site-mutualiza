@@ -30,13 +30,16 @@ export function Contact() {
                     </div>
 
                     <div>
-                        <a href="#">
+                        <a href="https://www.instagram.com/mutualiza/?next=%2F"
+                            target="_blank">
                             <InstagramLogo size={35} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=100090395072401&mibextid=ZbWKwL"
+                            target="_blank">
                             <FacebookLogo size={35} />
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/mutualiza-engenharia-ambiental/about/"
+                            target="_blank">
                             <LinkedinLogo size={35} />
                         </a>
                     </div>

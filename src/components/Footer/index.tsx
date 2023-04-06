@@ -19,13 +19,16 @@ export function Footer() {
             <p>(11) 96573-3521</p>
             <p>contato@mutualiza.com.br</p>
             <div>
-              <a href="#">
+              <a href="https://www.instagram.com/mutualiza/?next=%2F"
+                target="_blank">
                 <InstagramLogo size={32} />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=100090395072401&mibextid=ZbWKwL"
+                target="_blank">
                 <FacebookLogo size={32} />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/mutualiza-engenharia-ambiental/about/"
+                target="_blank">
                 <LinkedinLogo size={32} />
               </a>
             </div>
