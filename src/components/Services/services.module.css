@@ -137,6 +137,11 @@
   padding: 1rem;
 }
 
+.anchor {
+  text-decoration: none;
+  color: var(--tertiary);
+}
+
 
 @media (max-width: 850px) {
 

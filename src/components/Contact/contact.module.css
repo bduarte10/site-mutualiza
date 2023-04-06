@@ -89,6 +89,7 @@
     padding: 10px;
     font-size: 1rem;
     font-family: sans-serif;
+    resize: none;
   }
 
   .content_items_bottom form button {

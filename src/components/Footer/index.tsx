@@ -16,8 +16,8 @@ export function Footer() {
           </div>
 
           <div className={styles.contato}>
-            <p>Telefone: (11) 99999-9999</p>
-            <p>Email: ddddd@dfff.com</p>
+            <p>(11) 96573-3521</p>
+            <p>contato@mutualiza.com.br</p>
             <div>
               <a href="#">
                 <InstagramLogo size={32} />

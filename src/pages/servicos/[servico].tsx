@@ -3,6 +3,7 @@ import { conteudo } from '../../components/Services/listaServicos';
 import { Contact } from '@/components/Contact';
 import styles from './servicos.module.css';
 
+
 interface ServicoProps {
   servico: string;
 }
@@ -19,6 +20,7 @@ const ServicoPage = ({ servico }: ServicoProps) => {
       </div>
 
       <Contact />
+
 
     </main>
   );

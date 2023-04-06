@@ -8,6 +8,7 @@ import {
   Scroll,
   Truck,
 } from 'phosphor-react';
+import Link from 'next/link';
 
 interface Service {
   icon: JSX.Element;
@@ -39,7 +40,7 @@ export const services: Service[] = [
   {
     icon: <Truck size={42} />,
     title: 'Gerenciamento de Manifesto de Transporte de Resíduos (MTR)',
-    link: '/servicos',
+    link: '/servicos/gerenciamento-de-manifesto-de-transporte-de-residuos',
   },
   {
     icon: <HouseLine size={42} />,
@@ -50,7 +51,7 @@ export const services: Service[] = [
     icon: <EnvelopeSimpleOpen size={42} />,
     title:
       'Carta de Diretrizes de Água e/ou Esgoto (Sabesp)',
-    link: '/servicos/carta-de-diretrizes-de-agua-e-Esgoto ',
+    link: '/servicos/carta-de-diretrizes-de-agua-e-esgoto ',
   },
 ];
 
@@ -104,7 +105,7 @@ export const conteudo: Record<string, Servico> = {
 
 
   'residuos-solidos': {
-    titulo: 'Plano de Gerenciamento de Resíduos Sólidos',
+    titulo: 'Plano de Gerenciamento de Resíduos Sólidos (PGRS)',
     conteudo: (
       <>
         <div className={styles.content_text}>
@@ -197,7 +198,7 @@ export const conteudo: Record<string, Servico> = {
     ),
   },
 
-  'carta-de-diretrizes-de-agua-e-Esgoto': {
+  'carta-de-diretrizes-de-agua-e-esgoto': {
     titulo: 'Carta de Diretrizes de Água e/ou Esgoto (Sabesp)',
     conteudo: (
       <>
@@ -216,6 +217,36 @@ export const conteudo: Record<string, Servico> = {
           <div className={styles.front}>
             <Image
               src='/assets/bg-diretrizes.jpg'
+              width={500}
+              height={500}
+              alt='qualquer'
+            />
+            <div className={styles.blob}></div>
+          </div>
+        </div>
+      </>
+    ),
+  },
+
+  'gerenciamento-de-manifesto-de-transporte-de-residuos': {
+    titulo: 'Gerenciamento de Manifesto de Transporte de Resíduos (MTR)',
+    conteudo: (
+      <>
+        <div className={styles.content_text}>
+          <p>
+            O SIGOR (Sistema Estadual de Gerenciamento Online de Resíduos) - Módulo MTR é um sistema eletrônico desenvolvido pela CETESB (Companhia Ambiental do Estado de São Paulo) que possibilita o controle, o monitoramento e a rastreabilidade de todo o processo de gerenciamento de resíduos, garantindo a adequada destinação dos resíduos gerados pelas empresas.
+            <br />
+            <br />
+            Empresas que são obrigadas a elaborar o <span><Link className={styles.anchor} href={'/servicos/residuos-solidos'}>Plano de Gerenciamento de Resíduos Sólidos (PGRS)</Link> </span> e que geram, transportam e destinam resíduos também estão obrigadas a fazer a utilização do SIGOR para emitir o MTR (Manifesto de Transporte de Resíduos), documento que deve acompanhar o transporte dos resíduos.
+            <br />
+            <br />
+            A Mutualiza oferece o serviço de gerenciamento do SIGOR - Módulo MTR, garantindo a sua correta emissão e demais obrigações relacionadas ao sistema, como a DMR (Declaração de Movimentação de Resíduo), proporcionando tranquilidade e segurança aos nossos clientes no que se refere ao gerenciamento de seus resíduos.
+          </p>
+        </div>
+        <div className={styles.back}>
+          <div className={styles.front}>
+            <Image
+              src='/assets/bg-mtr.jpg'
               width={500}
               height={500}
               alt='qualquer'

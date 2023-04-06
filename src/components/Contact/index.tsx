@@ -1,6 +1,7 @@
 import { InstagramLogo, FacebookLogo, LinkedinLogo, Phone, EnvelopeSimple } from "phosphor-react"
 import styles from "./contact.module.css";
 import { motion } from "framer-motion";
+import { Form } from "./Form";
 
 export function Contact() {
     return (
@@ -49,19 +50,7 @@ export function Contact() {
                     transition={{ delay: 0.7, duration: 0.5 }}
                 >
 
-                    <form action="/send-data-here" method="post">
-                        <h2>Duvidas, sugestões, elogios... <br />
-                            Entre em contato!</h2>
-
-                        <input type="text" id="name" name="name" placeholder="Digite seu nome" />
-
-                        <input type="text" id="email" name="e-mail" placeholder="Digite seu e-mail" />
-
-                        <input type="number" id="phone" name="phone" placeholder="Digite seu número" />
-                        <label>Conte-nos a sua necessidade</label>
-                        <textarea name="" id="" cols={20} rows={10}></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
+                    <Form />
 
                 </motion.div>
 
