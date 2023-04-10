@@ -30,10 +30,7 @@ export function Form() {
   };
 
   return (
-    <form
-      className={styles.content_items_bottom}
-      action='/api/sendEmail'
-      onSubmit={handleSubmit}>
+    <form className={styles.content_items_bottom} onSubmit={handleSubmit}>
       <h2>Fale Conosco!</h2>
 
       <input
@@ -49,6 +46,7 @@ export function Form() {
         type='text'
         id='email'
         name='e-mail'
+        required
         placeholder='Digite seu e-mail'
         value={email}
         onChange={(event) => setEmail(event.target.value)}
@@ -69,6 +67,7 @@ export function Form() {
         id=''
         cols={20}
         rows={10}
+        required
         value={message}
         onChange={(event) => setMessage(event.target.value)}></textarea>
 

@@ -1,7 +1,7 @@
-import { ButtonWhatsapp } from "@/components/ButtonWhatsapp";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import styles from "./layout.module.css";
+import { ButtonWhatsapp } from '@/components/ButtonWhatsapp';
+import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
+import styles from './layout.module.css';
 
 export default function Layout({ children }) {
   return (

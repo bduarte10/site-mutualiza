@@ -22,7 +22,7 @@ export const sendEmail = async ({
     },
   });
   const mailOptions = {
-    from: email,
+    from: 'contato@mutualiza.com.br',
     to: 'contato@mutualiza.com.br',
     subject: 'New message from website',
     html: `
