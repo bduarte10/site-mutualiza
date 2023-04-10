@@ -24,7 +24,7 @@ export const sendEmail = async ({
   const mailOptions = {
     from: 'contato@mutualiza.com.br',
     to: 'contato@mutualiza.com.br',
-    subject: 'New message from website',
+    subject: `[Site] Nova mensagem de ${name}`,
     html: `
             <p>Name: ${name}</p>
             <p>Email: ${email}</p>
