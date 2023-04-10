@@ -2,6 +2,7 @@ import { ButtonWhatsapp } from '@/components/ButtonWhatsapp';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import styles from './layout.module.css';
+import { Toaster } from 'sonner'
 
 export default function Layout({ children }) {
   return (
@@ -10,6 +11,7 @@ export default function Layout({ children }) {
       <main className={styles.main}>{children}</main>
       <ButtonWhatsapp />
       <Footer />
+      <Toaster richColors position="top-right" />
     </div>
   );
 }

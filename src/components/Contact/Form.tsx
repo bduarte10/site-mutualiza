@@ -1,6 +1,9 @@
 import styles from './contact.module.css';
 import { useState } from 'react';
 import axios from 'axios';
+import { toast } from 'sonner';
+
+const promise = () => new Promise((resolve) => setTimeout(resolve, 2000));
 
 export function Form() {
   const [name, setName] = useState('');
@@ -13,17 +16,22 @@ export function Form() {
     event.preventDefault();
     setIsLoading(true);
 
+    toast.promise(promise(), {
+      loading: 'Enviando...',
+      success: (data) => {
+        setName('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+        return 'E-mail enviado com sucesso!';
+      },
+      error: 'Ocorreu um erro ao enviar o e-mail!',
+    });
+
     try {
       await axios.post('/api/contact', { name, email, phone, message });
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
-      alert('Mensagem enviada com sucesso!');
     } catch (error) {
-      alert(
-        'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.'
-      );
+      console.error(error);
     }
 
     setIsLoading(false);
