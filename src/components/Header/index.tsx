@@ -97,7 +97,12 @@ export function Header({ width }: HeaderProps) {
               transition={{ duration: 1, delay: 1.5 }}
               className={styles.button}
             >
-              CONTE-NOS A SUA NECESSIDADE
+              <a className={styles.anchor}
+                href="https://api.whatsapp.com/send?phone=5511965733521&text=Ol%C3%A1,%20tenho%20interesse%20em%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Mutualiza%20Engenharia%20Ambiental."
+                target="_blank"
+                rel="noreferrer"
+              >
+                CONTE-NOS A SUA NECESSIDADE</a>
             </motion.button>
           </nav>
           {windowWidth < 768 && <Mobile />}

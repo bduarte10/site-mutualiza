@@ -2,6 +2,8 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { conteudo } from '../../components/Services/listaServicos';
 import { Contact } from '@/components/Contact';
 import styles from './servicos.module.css';
+import { motion } from 'framer-motion';
+
 
 interface ServicoProps {
   servico: string;
@@ -15,7 +17,11 @@ const ServicoPage = ({ servico }: ServicoProps) => {
       </div>
 
       <div className='container'>
-        <div className={styles.content_list}>{conteudo[servico].conteudo}</div>
+        <div className={styles.content_list}>
+
+          {conteudo[servico].conteudo}
+
+        </div>
       </div>
 
       <Contact />

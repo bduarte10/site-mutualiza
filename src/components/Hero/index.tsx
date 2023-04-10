@@ -22,9 +22,7 @@ export function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.9 }}
               >
-                We offer a professional advice, guidance and actionable
-                solutions to businesses experiencing issues they can’t deal with
-                in-house.
+                Somos uma empresa de Engenharia e Consultoria Ambiental focada em proporcionar soluções ambientais personalizadas para o seu negócio
               </motion.h3>
               <motion.div
                 initial={{ opacity: 0 }}

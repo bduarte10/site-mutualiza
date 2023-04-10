@@ -14,12 +14,11 @@ export const AccordionComponent = () => (
       <Accordion.Header>
         <Accordion.Trigger className={styles.AccordionTrigger}>
           <ArrowRight size={32} className={styles.ArrowCircleRight} />
-          Historia
+          Visão
         </Accordion.Trigger>
       </Accordion.Header>
       <Accordion.Content className={styles.AccordionContent}>
-        O seu negócio e o meio ambiente em uma relação mutuamente benéfica!
-        A partir desta concepção se deu a origem da Mutualiza Engenharia Ambiental. Somos uma empresa de engenharia e consultoria, com atuação em diversas frentes ambientais..{' '}
+        Ser referência nacional na qualidade da prestação de serviços de engenharia e consultoria ambiental.
       </Accordion.Content>
     </Accordion.Item>
 
@@ -27,26 +26,37 @@ export const AccordionComponent = () => (
       <Accordion.Header>
         <Accordion.Trigger className={styles.AccordionTrigger}>
           <ArrowRight size={32} className={styles.ArrowCircleRight} />
-          Valores
+          Missão
         </Accordion.Trigger>
       </Accordion.Header>
       <Accordion.Content className={styles.AccordionContent}>
-        {' '}
-        Acreditamos que podemos nos desenvolver de forma mútua com o meio ambiente, aproveitando seus recursos de forma responsável e com segurança para as gerações futuras. Para adequar a sua empresa neste cenário, garantindo o cumprimento das legislações ambientais aplicáveis ao seu negócio, nós podemos te ajudar!{' '}
+        Entregar soluções ambientais efetivas e elevar o nível da relação entre o meio ambiente e nossos clientes, gerando valor e sustentabilidade.
       </Accordion.Content>
     </Accordion.Item>
 
     <Accordion.Item className={styles.item} value='item-3'>
       <Accordion.Header>
         <Accordion.Trigger className={styles.AccordionTrigger}>
-          <ArrowRight size={32} className={styles.ArrowCircleRight} /> Missão
+          <ArrowRight size={32} className={styles.ArrowCircleRight} />
+          Valores
         </Accordion.Trigger>
       </Accordion.Header>
       <Accordion.Content className={styles.AccordionContent}>
-        {' '}
-        A Mutualiza conta com uma equipe de profissionais altamente capacitados e experientes para realizar as análises técnicas necessárias para os mais diversos serviços ambientais de forma personalizada, eficiente e segura.
-        Entre em contato conosco e saiba mais sobre como podemos resolver a demanda ambiental do seu negócio.{' '}
+        <span>Agilidade.</span>  Buscamos por soluções efetivas de forma rápida. Todo caso é uma prioridade.
+        <br />
+        <br />
+
+        <span>Comprometimento. </span> Trabalhamos para entregar o melhor resultado possível.
+        <br />
+        <br />
+
+        <span>Ética.</span> Atuamos com respeito e transparência a fim de atingir nossos objetivos.
+        <br />
+        <br />
+
+        <span>Sustentabilidade.</span> Trabalhamos para assegurar o crescimento dos nossos clientes de forma harmônica com o meio ambiente
       </Accordion.Content>
     </Accordion.Item>
+
   </Accordion.Root>
 );

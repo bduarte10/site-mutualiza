@@ -16,13 +16,6 @@ export function About() {
           >
             Quem somos
           </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
-            Uma equipe apaixonada pelo progresso
-          </motion.p>
         </div>
 
         <div className={styles.content}>
@@ -33,12 +26,14 @@ export function About() {
               transition={{ delay: 0.5, duration: 1 }}
               className={styles.content_item_img}
             >
-              <Image
-                src='/assets/bg-about.png'
-                width={470}
-                height={480}
-                alt='Imagem de uma arvore sendo plantada'
-              />
+              <div className={styles.content_item_img_back}>
+                <Image
+                  src='/assets/bg-about.png'
+                  width={500}
+                  height={500}
+                  alt='Imagem de uma arvore sendo plantada'
+                />
+              </div>
             </motion.div>
             <div className={styles.content_items}>
               <motion.h2
@@ -46,18 +41,15 @@ export function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.8, duration: 1 }}
               >
-                Sustentabilidade e conciência
+                A Mutualiza
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1, duration: 1 }}
               >
-                Curabitur et mattis ante. Maecenas sit amet commodo tellus.{' '}
-                <br />
-                Phasellus fermentum pretium eros, ut faucibus velit auctor eget.
-                <br />
-                Vestibulum semper sed magna pretium congue.
+                Localizada em São Paulo e atendendo também a outros estados,
+                a Mutualiza atua oferecendo soluções técnicas ambientais de forma personalizada para o seu negócio, em demandas relacionadas a licenciamento ambiental, Ibama, resíduos sólidos e saneamento.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
@@ -69,65 +61,6 @@ export function About() {
                 </Link>
               </motion.div>
             </div>
-          </div>
-
-          <div className={styles.cards}>
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0 * 0.3, duration: 0.5 }}
-              className={styles.content_card}
-            >
-              <div className={styles.icon}>
-                <span>
-                  <CheckCircle size={36} />
-                </span>
-              </div>
-              <div>
-                <h2>Luctus nec ullamcorper</h2>
-                <p>
-                  Lorem ipsum dolor adipiscing elit. Ut elit tellus dapibus leo!
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1 * 0.3, duration: 0.5 }}
-              className={styles.content_card}
-            >
-              <div className={styles.icon}>
-                <span>
-                  <CheckCircle size={36} />
-                </span>
-              </div>
-              <div>
-                <h2>Luctus nec ullamcorper</h2>
-                <p>
-                  Lorem ipsum dolor adipiscing elit. Ut elit tellus dapibus leo!
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2 * 0.3, duration: 0.5 }}
-              className={styles.content_card}
-            >
-              <div className={styles.icon}>
-                <span>
-                  <CheckCircle size={36} />
-                </span>
-              </div>
-              <div>
-                <h2>Luctus nec ullamcorper</h2>
-                <p>
-                  Lorem ipsum dolor adipiscing elit. Ut elit tellus dapibus leo!
-                </p>
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>
