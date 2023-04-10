@@ -9,8 +9,9 @@ export function ButtonWhatsapp() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 1, type: "tween", ease: "easeIn" }}
       className={styles.buttonWhatsapp}
-      href="https://api.whatsapp.com/send?phone=5511965733521&text=Ol%C3%A1,%20tenho%20interesse%20em%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Mutualiza%20Engenharia%20Ambiental."
+      href={"https://api.whatsapp.com/send?phone=5511965733521&text=Ol%C3%A1,%20tenho%20interesse%20em%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Mutualiza%20Engenharia%20Ambiental."}
       target="_blank"
+      rel="noreferrer"
     >
       <Image
         src="/assets/whatsapp.svg"

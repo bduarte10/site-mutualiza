@@ -31,15 +31,18 @@ export function Contact() {
 
                     <div>
                         <a href="https://www.instagram.com/mutualiza/?next=%2F"
-                            target="_blank">
+                            target="_blank"
+                            rel="noreferrer">
                             <InstagramLogo size={35} />
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=100090395072401&mibextid=ZbWKwL"
-                            target="_blank">
+                            target="_blank"
+                            rel="noreferrer">
                             <FacebookLogo size={35} />
                         </a>
                         <a href="https://www.linkedin.com/company/mutualiza-engenharia-ambiental/about/"
-                            target="_blank">
+                            target="_blank"
+                            rel="noreferrer">
                             <LinkedinLogo size={35} />
                         </a>
                     </div>
