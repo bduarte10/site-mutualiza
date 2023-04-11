@@ -30,7 +30,7 @@ export const services: Service[] = [
   },
   {
     icon: <Recycle size={42} />,
-    title: 'Plano de Gerenciamento de Resíduos Sólidos',
+    title: 'Plano de Gerenciamento de Resíduos Sólidos PGRS',
     link: '/servicos/residuos-solidos',
   },
   {
