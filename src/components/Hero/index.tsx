@@ -45,7 +45,7 @@ export function Hero() {
                 src="/assets/isotipo-branco.png"
                 width={400}
                 height={400}
-                alt="hero background"
+                alt="Imagem da logo"
               />
             </motion.div>
           </div>

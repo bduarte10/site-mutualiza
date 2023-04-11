@@ -45,6 +45,7 @@ export function Form() {
         type='text'
         id='name'
         name='name'
+        required
         placeholder='Digite seu nome'
         value={name}
         onChange={(event) => setName(event.target.value)}

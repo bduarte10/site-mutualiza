@@ -16,7 +16,7 @@ export function Contact() {
                 >
                     <div>
                         <span><EnvelopeSimple size={32} />
-                            atendimento@mutualiza.com.br
+                            contato@mutualiza.com.br
                         </span>
                         <p>Dúvidas? Envie-nos um e-mail! <br />
                             Responderemos o mais rápido possível.</p>
@@ -24,9 +24,9 @@ export function Contact() {
 
                     <div>
                         <span><Phone size={32} />
-                            (11) 90909-0897
+                            (11) 96573-3521
                         </span>
-                        <p>De segunda a sexta das 9h às 21h.</p>
+                        <p>De segunda a sexta das 8h às 17hs.</p>
                     </div>
 
                     <div>

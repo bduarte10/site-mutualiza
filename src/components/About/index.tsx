@@ -48,8 +48,7 @@ export function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1, duration: 1 }}
               >
-                Localizada em São Paulo e atendendo também a outros estados,
-                a Mutualiza atua oferecendo soluções técnicas ambientais de forma personalizada para o seu negócio, em demandas relacionadas a licenciamento ambiental, Ibama, resíduos sólidos e saneamento.
+                Localizada em São Paulo e atendendo também a outros estados, a Mutualiza Engenharia Ambiental atua oferecendo soluções técnicas ambientais de forma personalizada para o seu negócio, em demandas relacionadas a Licenciamento Ambiental, Ibama, Resíduos Sólidos e Saneamento.
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
