@@ -17,13 +17,7 @@ export function Services() {
             >
               Nossos serviços
             </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5, duration: 0.5 }}
-            >
-              Abordagem moderna e resultados sustentáveis
-            </motion.p>
+
           </div>
           <div className={styles.content_items}>
             {services.map((service, index) => (
@@ -40,7 +34,7 @@ export function Services() {
                     </div>
                     <div className={styles.text}>
                       <h2>{service.title}</h2>
-                      <p>{service.text}</p>
+
                     </div>
                     <div className={styles.link}>
                       <span className={styles.spanLink}>Saiba mais</span>

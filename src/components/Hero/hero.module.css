@@ -77,8 +77,9 @@
     padding: 2rem;
     gap: 4rem;
   }
-  .content_items {
-    text-align: center;
+
+  .content_items div h1 {
+    line-height: 2.6rem;
   }
 
   .content_img div {

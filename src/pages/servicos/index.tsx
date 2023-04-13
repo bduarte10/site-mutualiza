@@ -8,8 +8,13 @@ export default function Servicos() {
   return (
     <main>
       <div className={styles.content_title}>
-        <h2>Nossos Serviços</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <motion.h2
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.3, duration: 0.7 }}
+        >
+          Nossos Serviços
+        </motion.h2>
       </div>
       <div className='container'>
         <div className={styles.content_items}>
@@ -27,7 +32,7 @@ export default function Servicos() {
                   </div>
                   <div className={styles.text}>
                     <h2>{service.title}</h2>
-                    <p>{service.text}</p>
+
                   </div>
                   <div className={styles.link}>
                     <span className={styles.spanLink}>Saiba mais</span>
