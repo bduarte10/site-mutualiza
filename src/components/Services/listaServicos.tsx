@@ -30,7 +30,7 @@ export const services: Service[] = [
   },
   {
     icon: <Recycle size={42} />,
-    title: 'Plano de Gerenciamento de Resíduos Sólidos',
+    title: 'Plano de Gerenciamento de Resíduos Sólidos (PGRS)',
     link: '/servicos/residuos-solidos',
   },
   {
@@ -145,7 +145,7 @@ export const conteudo: Record<string, Servico> = {
               src='/assets/bg-residuosSolidos.jpg'
               width={500}
               height={500}
-              alt='qualquer'
+              alt='Imagem de uma lixeira de residuos reciclaveis'
             />
             <div className={styles.blob}></div>
           </div>
@@ -188,7 +188,7 @@ export const conteudo: Record<string, Servico> = {
               src='/assets/bg-ibama.jpg'
               width={500}
               height={500}
-              alt='qualquer'
+              alt='Imagem de fabricas com grandes chaminés'
             />
             <div className={styles.blob}></div>
           </div>
@@ -223,7 +223,7 @@ export const conteudo: Record<string, Servico> = {
               src='/assets/bg-certidaoEsgotamento.jpg'
               width={500}
               height={500}
-              alt='qualquer'
+              alt='Imagem de reservatorios de água sendo tratada'
             />
             <div className={styles.blob}></div>
           </div>
@@ -261,7 +261,7 @@ export const conteudo: Record<string, Servico> = {
               src='/assets/bg-diretrizes.jpg'
               width={500}
               height={500}
-              alt='qualquer'
+              alt='Imagem de água caindo sobre as mãos'
             />
             <div className={styles.blob}></div>
           </div>
@@ -299,7 +299,7 @@ export const conteudo: Record<string, Servico> = {
               src='/assets/bg-mtr.jpg'
               width={500}
               height={500}
-              alt='qualquer'
+              alt='Imagem de papelões sendo reciclados'
             />
             <div className={styles.blob}></div>
           </div>

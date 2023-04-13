@@ -31,7 +31,7 @@ export default function Sobre() {
                 src="/assets/img-sobre.jpg"
                 width={500}
                 height={500}
-                alt=""
+                alt="Imagem de várias mãos segurando o tronco de uma árvore"
               />
             </div>
           </motion.div>
@@ -84,7 +84,7 @@ export default function Sobre() {
                 src="/assets/img-office.jpg"
                 width={500}
                 height={500}
-                alt=""
+                alt="Imagem de projetos ambientais em papel e um notebook"
               />
 
             </div>
