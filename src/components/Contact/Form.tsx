@@ -30,14 +30,18 @@ export function Form() {
 
     try {
       await axios.post('/api/contact', { name, email, phone, message });
-
     } catch (error) {
       console.error(error);
       toast.error('Ocorreu um erro ao enviar o e-mail!');
+    } finally {
+      setName('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+      setIsLoading(false);
     }
-
-    setIsLoading(false);
   };
+
 
   return (
     <form className={styles.content_items_bottom} onSubmit={handleSubmit}>
