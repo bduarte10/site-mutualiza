@@ -15,33 +15,32 @@ export function Form() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsLoading(true);
+    let success = false;
 
     toast.promise(promise(), {
       loading: 'Enviando...',
       success: (data) => {
-        setName('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-        return 'E-mail enviado com sucesso!';
+        if (success) {
+          setName('');
+          setEmail('');
+          setPhone('');
+          setMessage('');
+          return 'E-mail enviado com sucesso!';
+        }
       },
       error: 'Ocorreu um erro ao enviar o e-mail!',
     });
 
     try {
       await axios.post('/api/contact', { name, email, phone, message });
+      success = true;
     } catch (error) {
       console.error(error);
       toast.error('Ocorreu um erro ao enviar o e-mail!');
     } finally {
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
       setIsLoading(false);
     }
   };
-
 
   return (
     <form className={styles.content_items_bottom} onSubmit={handleSubmit}>
