@@ -10,8 +10,6 @@ type ContactFormData = {
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     const { name, email, phone, message }: ContactFormData = req.body;
-    console.log(name, email);
-
     try {
       sendEmail({ name, email, phone, message });
       res.status(200).json({ message: 'Email sent successfully' });
