@@ -36,7 +36,7 @@ export const sendEmail = async ({
   });
 
   const mailOptions = {
-    from: 'nicolas@mutualiza.com.br',
+    from: 'contato@mutualiza.com.br',
     to: 'contato@mutualiza.com.br',
     subject: `[Site] Nova mensagem de ${name}`,
     html: `
