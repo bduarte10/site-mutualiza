@@ -3,8 +3,6 @@ import { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'sonner';
 
-
-
 export function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -12,27 +10,52 @@ export function Form() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsLoading(true);
-    let success = false;
+    const enviaEmail = axios.post('/api/contact', {
+      name,
+      email,
+      phone,
+      message,
+    });
+    const promise = () =>
+      new Promise((resolve, reject) => {
+        try {
+          resolve(enviaEmail);
+        } catch (error) {
+          reject(error);
+          setIsLoading(false);
+        }
+      });
 
-    try {
-      await axios.post('/api/contact', { name, email, phone, message });
-      setName('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
-      success = true;
-    } catch (error) {
-      console.error(error);
-      toast.error('Ocorreu um erro ao enviar o e-mail!');
-    } finally {
-      setIsLoading(false);
-      if (success) {
-        toast.success('E-mail enviado com sucesso!');
-      }
-    }
+    toast.promise(promise, {
+      loading: 'Enviando e-mail...',
+      success: () => {
+        return `E-mail enviado com sucesso!`;
+      },
+      error: 'Ocorreu um erro ao enviar o e-mail!',
+    });
+    setName('');
+    setEmail('');
+    setPhone('');
+    setMessage('');
+    // try {
+    //   await axios.post('/api/contact', { name, email, phone, message });
+    //   setName('');
+    //   setEmail('');
+    //   setPhone('');
+    //   setMessage('');
+    //   success = true;
+    // } catch (error) {
+    //   console.error(error);
+    //   toast.error('Ocorreu um erro ao enviar o e-mail!');
+    // } finally {
+    //   setIsLoading(false);
+    //   if (success) {
+    //     toast.success('E-mail enviado com sucesso!');
+    //   }
+    // }
   };
 
   return (
