@@ -41,7 +41,7 @@ export const sendEmail = async ({
   });
 
   const mailOptions = {
-    from: 'nicolas@mutualiza.com.br',
+    from: 'contato@mutualiza.com.br',
     to: 'contato@mutualiza.com.br',
     subject: `[Site] Nova mensagem de ${name}`,
     html: `
@@ -51,5 +51,5 @@ export const sendEmail = async ({
             <p>Message: ${message}</p>
         `,
   };
-  await transporter.sendMail(mailOptions);
+  transporter.sendMail(mailOptions);
 };
