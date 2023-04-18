@@ -4,7 +4,6 @@ import axios from 'axios';
 import { toast } from 'sonner';
 
 
-const promise = () => new Promise((resolve) => setTimeout(resolve, 2000));
 
 export function Form() {
   const [name, setName] = useState('');
