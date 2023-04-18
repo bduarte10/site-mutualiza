@@ -40,22 +40,6 @@ export function Form() {
     setEmail('');
     setPhone('');
     setMessage('');
-    // try {
-    //   await axios.post('/api/contact', { name, email, phone, message });
-    //   setName('');
-    //   setEmail('');
-    //   setPhone('');
-    //   setMessage('');
-    //   success = true;
-    // } catch (error) {
-    //   console.error(error);
-    //   toast.error('Ocorreu um erro ao enviar o e-mail!');
-    // } finally {
-    //   setIsLoading(false);
-    //   if (success) {
-    //     toast.success('E-mail enviado com sucesso!');
-    //   }
-    // }
   };
 
   return (
