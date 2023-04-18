@@ -12,7 +12,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
   if (req.method === 'POST') {
     const { name, email, phone, message }: ContactFormData = req.body;
-    console.log(name, email);
+    sendEmail(req.body)
 
     /* try {
        sendEmail({ name, email, phone, message });
