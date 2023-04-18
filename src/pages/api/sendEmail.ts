@@ -35,8 +35,8 @@ export const sendEmail = async ({
       console.log(error);
       res.status(500).json(error);
     } else {
-      console.log("Server is ready to take our messages");
-      res.status(200).json('ok');
+      console.log(success);
+      res.status(200).send('ok');
     }
   });
 
